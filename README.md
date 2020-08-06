@@ -1,4 +1,4 @@
-### Hi there 👋
+# Hi! I'm an enthusiast web developer from Poznań. I'm still learning but I've fallen in love with front-end technologies, especially Java Script and React.
 
 <!--
 **Lynthius/Lynthius** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
