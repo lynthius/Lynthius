@@ -1,6 +1,6 @@
 # Hi! I'm an enthusiast web developer from Poznań.
-https://img.shields.io/badge/github/followers/:user?label=Follow
-https://img.shields.io/badge/github/twitter/follow/:user?label=Follow
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/Lynthius?label=Follow%20me%21">
+
 
 
 <!--
