@@ -1,7 +1,5 @@
 # Hi! I'm an enthusiast web developer from Poznań.
 
-<img align="center" src="https://github-readme-stats.vercel.app/api/<CARD_TYPE>/?username=<Lynthius>&theme=<onedark>" />
-
 <!--
 **Lynthius/Lynthius** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
