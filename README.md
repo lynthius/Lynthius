@@ -1,14 +1,11 @@
 ## Hello, nice to see you. :wave:
-I'm an enthusiast web developer from Poland. I'm also yllwduck project creator and member of CodersCrew organization. Beside's programming, I enjoy drinking coffee, playing games and taking photos.
+I'm an enthusiast web developer from Poland. I'm also yllwduck project creator and member of CodersCrew organization. Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick: and taking photos :camera:.
 
-### Languages :sparkles:
+### Languages and Technologies
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=CSS&logo=css3&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
-
-
-### Technologies :sparkles:
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=Node.js&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Gulp&logo=gulp&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
