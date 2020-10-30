@@ -3,12 +3,13 @@ I'm an enthusiast web developer from Poland. I'm also yllwduck project creator a
 
 ### Languages
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 
 ### Technologies
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=Node.js&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=Gatsby&logo=Gatsby&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=MySql&logo=MySql&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Node.js&logo=Node.js&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Gulp&logo=gulp&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 
 ### Stay in touch
