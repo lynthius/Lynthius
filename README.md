@@ -1,4 +1,5 @@
 # Hi! I'm an enthusiast web developer from Poznań.
+## I'm yllwduck project creator and member of CodersCrew organization.
 
 <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Lynthius?color=blue&label=Follow%20me%21&logo=twitter&logoColor=blue&style=flat-square">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/Lynthius?color=%23777777&label=Follow%20me%21&logo=github&style=flat-square">
