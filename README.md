@@ -1,8 +1,9 @@
-## Hi, nice to see you.
-I'm an enthusiast web developer from Poznań. I'm also yllwduck project creator and member of CodersCrew organization.
+## Hello, nice to see you.
+I'm an enthusiast web developer from Poznań. I'm also yllwduck project creator and member of CodersCrew organization. Beside's programming, I enjoy drinking coffee, playing games and taking photos.
 
-<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Lynthius?color=blue&label=Follow%20me%21&logo=twitter&logoColor=blue&style=flat-square">
-<img alt="GitHub followers" src="https://img.shields.io/github/followers/Lynthius?color=%23777777&label=Follow%20me%21&logo=github&style=flat-square">
+### Languages
+![](https://img.shields.io/twitter/follow/Lynthius?color=blue&label=Follow%20me%21&logo=twitter&logoColor=blue&style=flat-square)
+![](https://img.shields.io/github/followers/Lynthius?color=%23777777&label=Follow%20me%21&logo=github&style=flat-square)
 
 
 <!--
