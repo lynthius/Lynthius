@@ -1,7 +1,7 @@
 ## Hello, nice to see you. :wave:
-I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creator and member of **CodersCrew** organization. Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick: and taking photos :camera:.
+I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creator and member of **CodersCrew** organization. Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick: and taking photos :camera: (products and astrophotography).
 
-### Languages and Technologies :computer:
+### > Languages and Technologies :computer:
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
@@ -11,7 +11,7 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 ![](https://img.shields.io/static/v1?message=Gulp&logo=gulp&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 
-### Stay in touch :email:
+### > Stay in touch :email:
 ![](https://img.shields.io/twitter/follow/Lynthius?color=blue&label=Follow%20me%21&logo=twitter&logoColor=blue&style=flat-square)
 ![](https://img.shields.io/github/followers/Lynthius?color=%23777777&label=Follow%20me%21&logo=github&style=flat-square)
 
