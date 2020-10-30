@@ -2,10 +2,10 @@
 I'm an enthusiast web developer from Poland. I'm also yllwduck project creator and member of CodersCrew organization. Beside's programming, I enjoy drinking coffee, playing games and taking photos.
 
 ### Languages
-
+![](https://img.shields.io/static/v1?message=JavaScript&logo=react&labelColor=5c5c5c&color=1182c3&logoColor=yellow&label=%20)
 
 ### Technologies
-![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=5c5c5c&color=1182c3&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=5c5c5c&color=1182c3&logoColor=blue&label=%20)
 
 
 ### Stay in touch
