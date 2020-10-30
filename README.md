@@ -12,7 +12,7 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23777777&color=%23777777&logoColor=white&label=%20&style=flat-square)
 
 ### > Stay in touch :email:
-![](https://img.shields.io/twitter/follow/Lynthius?color=blue&label=Follow%20me%21&logo=twitter&logoColor=blue&style=flat-square)
+![](https://img.shields.io/twitter/follow/Lynthius?color=blue&label=Follow%20me%21&logo=twitter&logoColor=%23777777&style=flat-square)
 ![](https://img.shields.io/github/followers/Lynthius?color=%23777777&label=Follow%20me%21&logo=github&style=flat-square)
 
 <hr>
