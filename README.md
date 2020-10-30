@@ -1,4 +1,4 @@
-## Hello, nice to see you.
+## Hello, nice to see you. :wave:
 I'm an enthusiast web developer from Poland. I'm also yllwduck project creator and member of CodersCrew organization. Beside's programming, I enjoy drinking coffee, playing games and taking photos.
 
 ### Languages
