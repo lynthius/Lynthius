@@ -20,8 +20,7 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 
 <hr>
 
-www.tomaszprzyborowski.pl
-
+<a href="https://www.tomaszprzyborowski.pl/">www.tomaszprzyborowski.pl</a>
 
 <!--
 **Lynthius/Lynthius** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
