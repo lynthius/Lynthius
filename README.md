@@ -11,7 +11,7 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 ![](https://img.shields.io/static/v1?message=Node.js&logo=Node.js&labelColor=%23282828&color=%23282828&logoColor=%3c873a&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=Gulp&logo=gulp&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Gulp.js&logo=gulp&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Gatsby&logo=gatsby&labelColor=%23282828&color=%23282828&logoColor=rebeccapurple&label=%20&style=flat-square)
 
 ### > Stay in touch :email:
