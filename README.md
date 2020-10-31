@@ -4,8 +4,8 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 ### > Languages and Technologies :sparkles:
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23777777&color=%23777777&logoColor=%f0db4f&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23777777&color=%23777777&logoColor=%007acc&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23777777&color=%23777777&logoColor=%e34c26&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=CSS&logo=css3&labelColor=%23777777&color=%23777777&logoColor=%264de4&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23777777&color=%23777777&logoColor=%f06529&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=CSS&logo=css3&labelColor=%23777777&color=%23777777&logoColor=%2965f1&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Sass&logo=sass&labelColor=%23777777&color=%23777777&logoColor=%cc6699&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23777777&color=%23777777&logoColor=%88dded&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=Node.js&labelColor=%23777777&color=%23777777&logoColor=%3c873a&label=%20&style=flat-square)
