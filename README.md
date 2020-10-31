@@ -20,8 +20,6 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 
 <hr>
 
-_____________________________________________________________________________________________________________________
-
 www.tomaszprzyborowski.pl
 
 
