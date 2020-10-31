@@ -2,7 +2,7 @@
 I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creator and member of **CodersCrew** organization. Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick: and taking photos :camera: (products and astrophotography).
 
 ### > Languages and Technologies :sparkles:
-![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%303030&color=%303030&logoColor=%f0db4f&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=black&color=black&logoColor=%f0db4f&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23777777&color=%23777777&logoColor=dodgerblue&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23777777&color=%23777777&logoColor=%f06529&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=CSS&logo=css3&labelColor=%23777777&color=%23777777&logoColor=skyblue&label=%20&style=flat-square)
