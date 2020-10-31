@@ -18,7 +18,9 @@ I'm an enthusiast web developer from Poland. I'm also **yllwduck** project creat
 ![](https://img.shields.io/twitter/follow/Lynthius?color=%23282828&label=Follow%20me%21&logo=twitter&labelColor=%23282828&logoColor=%1DA1F2&style=flat-square)
 ![](https://img.shields.io/github/followers/Lynthius?color=%23282828&label=Follow%20me%21&logo=github&labelColor=%23282828&style=flat-square)
 
-<hr style="color: white;">
+<hr>
+
+_____________________________________________________________________________________________________________________
 
 www.tomaszprzyborowski.pl
 
