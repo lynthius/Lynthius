@@ -7,7 +7,6 @@ Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick:
 ![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23282828&color=%23282828&logoColor=%f06529&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=CSS&logo=css3&labelColor=%23282828&color=%23282828&logoColor=skyblue&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Sass&logo=sass&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23282828&color=%23282828&logoColor=%88dded&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
