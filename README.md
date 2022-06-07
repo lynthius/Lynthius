@@ -1,5 +1,5 @@
 ## Hello, nice to see you. :wave:
-I'm an enthusiast web developer from Poland 🇵🇱 I'm also <a href="https://github.com/yllwduck">**yllwduck**</a> project creator and member of <a href="https://github.com/CodersCrew/">**CodersCrew**</a> organization. <br>
+I'm an enthusiast web developer from Poland 🇵🇱 I'm also <a href="https://github.com/yllwduck">**yllwduck**</a> project creator and former member of <a href="https://github.com/CodersCrew/">**CodersCrew**</a> organization. <br>
 Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick: and taking photos :camera: (products and astrophotography).
 
 ### > Languages and Technologies :sparkles:
