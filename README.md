@@ -12,7 +12,7 @@ I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websi
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Shopify&logo=Shopify&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 
-### > Things I'm learning
+### > Things I'm learning now
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23282828&color=%23282828&logoColor=skyblue&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Three.js&logo=three.js&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
