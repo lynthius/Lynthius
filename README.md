@@ -1,6 +1,5 @@
 ## Hello, nice to see you. :wave:
-I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websites with code and passion.<br>
-I'm also <a href="https://github.com/yllwduck">**yllwduck**</a> project creator and former member of <a href="https://github.com/CodersCrew/">**CodersCrew**</a> organization. <br>
+I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websites with code and passion. I'm also <a href="https://github.com/yllwduck">**yllwduck**</a> project creator and former member of <a href="https://github.com/CodersCrew/">**CodersCrew**</a> organization. <br><br>
 Beside's programming, I love coffee :coffee:, games :joystick: and science :telescope:.
 
 ### > Things I code with
