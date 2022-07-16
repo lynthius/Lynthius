@@ -18,6 +18,11 @@ Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick:
 ![](https://img.shields.io/github/followers/Lynthius?color=%23282828&label=Follow%20me%21&logo=github&labelColor=%23282828&style=flat-square)
 
 <!--START_SECTION:waka-->
+
+```text
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
 
 <hr>
