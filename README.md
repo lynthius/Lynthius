@@ -1,6 +1,5 @@
 ## Hello, nice to see you. :wave:
-I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websites with code and passion. I'm also <a href="https://github.com/yllwduck">**yllwduck**</a> project creator and former member of <a href="https://github.com/CodersCrew/">**CodersCrew**</a> organization. <br><br>
-Beside's programming, I love coffee :coffee:, games :joystick: and science :telescope:.
+I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websites with code and passion. I'm also <a href="https://github.com/yllwduck">**yllwduck**</a> project creator and former member of <a href="https://github.com/CodersCrew/">**CodersCrew**</a> organization. Beside's programming, I love coffee :coffee:, games :joystick: and science :telescope:.
 
 ### > Things I code with
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
