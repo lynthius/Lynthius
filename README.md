@@ -17,6 +17,9 @@ Beside's programming, I enjoy drinking coffee :coffee:, playing games :joystick:
 ![](https://img.shields.io/twitter/follow/Lynthius?color=%23282828&label=Follow%20me%21&logo=twitter&labelColor=%23282828&logoColor=%1DA1F2&style=flat-square)
 ![](https://img.shields.io/github/followers/Lynthius?color=%23282828&label=Follow%20me%21&logo=github&labelColor=%23282828&style=flat-square)
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
 <hr>
 
 <a href="https://www.tomaszprzyborowski.pl/">www.tomaszprzyborowski.pl</a>
