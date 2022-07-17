@@ -19,6 +19,11 @@ I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websi
 
 ### > Statistics
 <!--START_SECTION:waka-->
+
+```text
+Other        46 mins         ███████████████████░░░░░░   76.30 %
+```
+
 <!--END_SECTION:waka-->
 
 ### > Stay in touch 
