@@ -30,15 +30,6 @@ I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websi
 ```
 
 
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-Other                    46 mins             ███████████████████░░░░░░   76.3% 
-JavaScript               14 mins             ██████░░░░░░░░░░░░░░░░░░░   23.7%
-
-```
-
 **I Mostly Code in JavaScript** 
 
 ```text
@@ -51,7 +42,7 @@ Liquid                   1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 17/07/2022 18:29:15 UTC
+ Last Updated on 17/07/2022 18:35:25 UTC
 <!--END_SECTION:waka-->
 
 ### Stay in touch 
