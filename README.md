@@ -19,22 +19,6 @@ I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websi
 
 ### Code Statistics
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-244%20hrs%2020%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-209-blue)
-
-**🐱 My GitHub Data** 
-
-> 🏆 21 Contributions in the Year 2022
- > 
-> 📦 53.3 kB Used in GitHub's Storage 
- > 
-> 💼 Opted to Hire
- > 
-> 📜 8 Public Repositories 
- > 
-> 🔑 5 Private Repositories  
- > 
 **I'm an Early 🐤** 
 
 ```text
@@ -44,37 +28,14 @@ I'm an enthusiast front-end web developer from Poland 🇵🇱 and I build websi
 🌙 Night      23 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   9.47%
 
 ```
-📅 **I'm Most Productive on Saturday** 
-
-```text
-Monday       13 commits     █░░░░░░░░░░░░░░░░░░░░░░░░   5.35% 
-Tuesday      39 commits     ████░░░░░░░░░░░░░░░░░░░░░   16.05% 
-Wednesday    11 commits     █░░░░░░░░░░░░░░░░░░░░░░░░   4.53% 
-Thursday     56 commits     █████░░░░░░░░░░░░░░░░░░░░   23.05% 
-Friday       31 commits     ███░░░░░░░░░░░░░░░░░░░░░░   12.76% 
-Saturday     84 commits     ████████░░░░░░░░░░░░░░░░░   34.57% 
-Sunday       9 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   3.7%
-
-```
 
 
 📊 **This Week I Spent My Time On** 
 
 ```text
-⌚︎ Time Zone: Europe/Warsaw
-
 💬 Programming Languages: 
 Other                    46 mins             ███████████████████░░░░░░   76.3% 
 JavaScript               14 mins             ██████░░░░░░░░░░░░░░░░░░░   23.7%
-
-🔥 Editors: 
-VS Code                  1 hr 1 min          █████████████████████████   100.0%
-
-🐱‍💻 Projects: 
-main-theme-noo-ma        1 hr 1 min          █████████████████████████   100.0%
-
-💻 Operating System: 
-Mac                      1 hr 1 min          █████████████████████████   100.0%
 
 ```
 
@@ -89,12 +50,8 @@ Liquid                   1 repo              ██░░░░░░░░░�
 ```
 
 
-**Timeline**
 
-![Chart not found](https://raw.githubusercontent.com/Lynthius/Lynthius/master/charts/bar_graph.png) 
-
-
- Last Updated on 17/07/2022 18:19:48 UTC
+ Last Updated on 17/07/2022 18:29:15 UTC
 <!--END_SECTION:waka-->
 
 ### Stay in touch 
