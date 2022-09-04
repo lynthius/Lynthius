@@ -20,17 +20,6 @@ I'm a front-end web developer from Poland 🇵🇱 and I build websites with cod
 
 ### Code Statistics
 <!--START_SECTION:waka-->
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning    51 commits     █████░░░░░░░░░░░░░░░░░░░░   20.16% 
-🌆 Daytime    116 commits    ███████████░░░░░░░░░░░░░░   45.85% 
-🌃 Evening    63 commits     ██████░░░░░░░░░░░░░░░░░░░   24.9% 
-🌙 Night      23 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   9.09%
-
-```
-
-
 **I Mostly Code in JavaScript** 
 
 ```text
@@ -43,7 +32,7 @@ Liquid                   1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 03/09/2022 18:44:57 UTC
+ Last Updated on 04/09/2022 18:44:54 UTC
 <!--END_SECTION:waka-->
 
 ### Stay in touch 
