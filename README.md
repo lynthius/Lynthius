@@ -52,4 +52,4 @@ SCSS                     1 repo              █░░░░░░░░░░�
 
 <hr>
 
-<a href="https://www.tomaszprzyborowski.pl/">www.tomaszprzyborowski.pl</a>
+<a href="https://www.tomaszprzyborowski.com/">www.tomaszprzyborowski.com</a>
