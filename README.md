@@ -1,7 +1,7 @@
 ## Hello, nice to see you. :wave:
 I’m front-end developer from Poland 🇵🇱 and I build websites with code and passion. I love testing new technologies, which is why I have a lot of experience with no-code solutions that I really appreciate (especially Webflow). I work full-time as a Shopify developer, but I'm also a freelancer where I work on my own projects in collaboration with several agencies. Besides programming, I love coffee, rāmen and science (fiction too).
 
-Immersing in the rhythm of code with my favorite work-time melodies
+Immersing in the rhythm of code with my favorite work-time melodies<br>
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lynthius&cover_image=false&theme=natemoo-re&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
 
 ### Things I code with
