@@ -48,6 +48,8 @@ SCSS                     1 repo              █░░░░░░░░░░�
 
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lynthius&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=true&bar_color=f2f2f2&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=lynthius&redirect=true)
 
+![spotify-github-profile](/img/novatorem.svg)
+
 ### Stay in touch 
 ![](https://img.shields.io/twitter/follow/Lynthius?color=%23282828&label=Follow%20me%21&logo=twitter&labelColor=%23282828&logoColor=%1DA1F2&style=flat-square)
 ![](https://img.shields.io/github/followers/Lynthius?color=%23282828&label=Follow%20me%21&logo=github&labelColor=%23282828&style=flat-square)
