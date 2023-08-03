@@ -14,7 +14,7 @@ I’m front-end developer from Poland 🇵🇱 and I build websites with code an
 ![](https://img.shields.io/static/v1?message=Webflow&logo=Webflow&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 
-### Exploring new tech territories
+&nbsp;### Exploring new tech territories
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23282828&color=%23282828&logoColor=skyblue&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 
