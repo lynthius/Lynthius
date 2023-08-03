@@ -19,7 +19,7 @@ I’m front-end developer from Poland 🇵🇱 and I build websites with code an
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 
 ### Immersing in the rhythm of code <br>
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lynthius&cover_image=false&theme=natemoo-re&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lynthius&cover_image=false&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color_cover=true&bar_color=53b14f)](https://spotify-github-profile.vercel.app/api/view?uid=lynthius&redirect=true)
 
 ### Code Statistics
 <!--START_SECTION:waka-->
