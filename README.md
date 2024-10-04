@@ -7,7 +7,6 @@
 
 >[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=lynthius&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=lynthius&redirect=true)
 
-https://spotify-github-profile.vercel.app
 ##
 ### Things I code with
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
