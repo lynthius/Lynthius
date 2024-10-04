@@ -10,6 +10,7 @@
 ##
 ### Things I code with
 ![](https://img.shields.io/static/v1?message=Shopify&logo=Shopify&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Liquid&logo=Liquid&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Graphql&logo=Graphql&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=%23282828&color=%23282828&logoColor=%f06529&label=%20&style=flat-square)
