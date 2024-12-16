@@ -1,5 +1,5 @@
 # Hello, nice to see you. :wave:
-<p>I’m a front-end developer from Poland and I build websites with code and passion. I love testing new technologies, which is why I have also a lot of experience with no-code solutions that I really appreciate (especially Webflow).</p>
+<p>I’m a front-end developer from Poland and I build websites with code and passion. I love testing new technologies, which is why I also have a lot of experience with no-code solutions that I really appreciate (especially Webflow).</p>
 
 <p>I work full-time as a Shopify developer, but I'm also a freelancer where I work on my own projects in collaboration with several agencies.</p> 
 
