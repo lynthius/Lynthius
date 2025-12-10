@@ -42,17 +42,17 @@
 **I Mostly Code in Liquid** 
 
 ```text
-Liquid                   11 repos            █████████░░░░░░░░░░░░░░░░   36.67 % 
-JavaScript               7 repos             ██████░░░░░░░░░░░░░░░░░░░   23.33 % 
-HTML                     6 repos             █████░░░░░░░░░░░░░░░░░░░░   20.00 % 
-TypeScript               4 repos             ███░░░░░░░░░░░░░░░░░░░░░░   13.33 % 
-CSS                      2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.67 % 
+Liquid                   11 repos            █████████░░░░░░░░░░░░░░░░   35.48 % 
+JavaScript               7 repos             ██████░░░░░░░░░░░░░░░░░░░   22.58 % 
+HTML                     6 repos             █████░░░░░░░░░░░░░░░░░░░░   19.35 % 
+TypeScript               4 repos             ███░░░░░░░░░░░░░░░░░░░░░░   12.90 % 
+Dart                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.23 % 
 ```
 
 
 
 
- Last Updated on 09/12/2025 18:59:08 UTC
+ Last Updated on 10/12/2025 19:02:27 UTC
 <!--END_SECTION:waka-->
 ##
 ### Stay in touch 
