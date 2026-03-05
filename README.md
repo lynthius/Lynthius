@@ -18,6 +18,7 @@ If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s 
 ![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=node.js&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Google_Cloud-GCP&logo=googlecloud&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![GCP](https://img.shields.io/badge/Google_Cloud-GCP-4285F4?logo=googlecloud&logoColor=white)
 ![](https://img.shields.io/static/v1?message=Gulp.js&logo=gulp&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Vite.js&logo=vite&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
