@@ -1,19 +1,18 @@
-# Hello, nice to see you. :wave:
+# Hello, I'm Tomasz [/ˈtɔ.maʂ/] :wave:
 <p>I build Shopify stores that are engineered, not assembled. 
 Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.
 If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s weird — we figure it out.</p>
-
 <p>Interested? Ping. Connect. Deploy.</p> 
-
-<p>Besides programming, I love coffee :coffee:, rāmen :ramen: and science (fiction too) :alien:.</p><br>
+<br>
 
 >[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=lynthius&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=lynthius&redirect=true)
 
 ##
 ### Things I code with
 ![](https://img.shields.io/static/v1?message=Shopify&logo=Shopify&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=Liquid&labelColor=%23282828&color=%23282828&logoColor=%7AB55C&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Liquid&logo=Ruby&labelColor=%23282828&color=%23282828&logoColor=%7AB55C&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Graphql&logo=Graphql&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Polaris&logo=polaris&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
