@@ -1,7 +1,9 @@
 # Hello, nice to see you. :wave:
-<p>I’m a front-end developer from Poland and I build websites with code and passion. I love testing new technologies, which is why I also have a lot of experience with no-code solutions that I really appreciate (especially Webflow).</p>
+<p>I build Shopify stores that are engineered, not assembled. 
+Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.
+If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s weird — we figure it out.</p>
 
-<p>I work full-time as a Shopify developer, but I'm also a freelancer where I work on my own projects in collaboration with several agencies.</p> 
+<p>Interested? Ping. Connect. Deploy.</p> 
 
 <p>Besides programming, I love coffee :coffee:, rāmen :ramen: and science (fiction too) :alien:.</p><br>
 
@@ -10,11 +12,13 @@
 ##
 ### Things I code with
 ![](https://img.shields.io/static/v1?message=Shopify&logo=Shopify&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Liquid&logo=shopify&labelColor=%23282828&color=%23282828&logoColor=%7AB55C&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Graphql&logo=Graphql&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=node.js&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
+![GCP](https://img.shields.io/badge/Google_Cloud-GCP-4285F4?logo=googlecloud&logoColor=white)
 ![](https://img.shields.io/static/v1?message=Gulp.js&logo=gulp&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Vite.js&logo=vite&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Webflow&logo=Webflow&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
