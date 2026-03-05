@@ -12,7 +12,6 @@ If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s 
 ![](https://img.shields.io/static/v1?message=Shopify&logo=Shopify&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Liquid&logo=Ruby&labelColor=%23282828&color=%23282828&logoColor=%7AB55C&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Graphql&logo=Graphql&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=Polaris&logo=polaris&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
@@ -21,7 +20,6 @@ If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s 
 ![](https://img.shields.io/static/v1?message=Gulp.js&logo=gulp&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Vite.js&logo=vite&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Webflow&logo=Webflow&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=Wordpress&logo=Wordpress&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ##
 ### Exploring new tech territories
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23282828&color=%23282828&logoColor=skyblue&label=%20&style=flat-square)
