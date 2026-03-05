@@ -12,7 +12,6 @@
 ![](https://img.shields.io/static/v1?message=Shopify&logo=Shopify&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Graphql&logo=Graphql&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=SASS&logo=sass&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=node.js&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
@@ -24,6 +23,7 @@
 ### Exploring new tech territories
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23282828&color=%23282828&logoColor=skyblue&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Python&logo=python&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 ##
 ### Code Statistics
 <!--START_SECTION:waka-->
