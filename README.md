@@ -1,7 +1,5 @@
 # Hello, I'm Tomasz [/ˈtɔ.maʂ/] :wave:
-<p>I build Shopify stores that are engineered, not assembled. 
-Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.
-If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s weird — we figure it out.</p>
+<p>I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps. If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s weird — we figure it out.</p>
 <p>Interested? Ping. Connect. Deploy.</p> 
 <br>
 
@@ -13,17 +11,18 @@ If it needs to be fast, it’s fast. If it needs to scale, it scales. If it’s 
 ![](https://img.shields.io/static/v1?message=Liquid&logo=Ruby&labelColor=%23282828&color=%23282828&logoColor=%7AB55C&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Graphql&logo=Graphql&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=%23282828&color=%23282828&logoColor=%f0db4f&label=%20&style=flat-square)
-![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=npm&logo=NPM&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Node.js&logo=node.js&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=GCP&logo=googlecloud&labelColor=%23282828&color=%23282828&logoColor=%cb3837&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Gulp.js&logo=gulp&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Vite.js&logo=vite&labelColor=%23282828&color=%23282828&logoColor=%d34a47&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Hexo&logo=Hexo&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Webflow&logo=Webflow&labelColor=%23282828&color=%23282828&logoColor=%3184cc&label=%20&style=flat-square)
 ##
 ### Exploring new tech territories
 ![](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&labelColor=%23282828&color=%23282828&logoColor=skyblue&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=React&logo=react&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
+![](https://img.shields.io/static/v1?message=Vercel&logo=vercel&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 ![](https://img.shields.io/static/v1?message=Python&logo=python&labelColor=%23282828&color=%23282828&logoColor=%cc6699&label=%20&style=flat-square)
 ##
 ### Code Statistics
