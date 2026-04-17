@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // scripts/generate.js
-// Fetches GitHub + Spotify data and writes user.svg to the repo root.
+// Fetches GitHub + Spotify data and writes README.md to the repo root.
 
 const fs   = require('fs');
 const path = require('path');
 
-const USERNAME             = 'lynthius';
-const GH_TOKEN             = process.env.GH_TOKEN;
-const SPOTIFY_CLIENT_ID    = process.env.SPOTIFY_CLIENT_ID;
+const USERNAME              = 'lynthius';
+const GH_TOKEN              = process.env.GH_TOKEN;
+const SPOTIFY_CLIENT_ID     = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
 
@@ -25,7 +25,6 @@ async function ghFetch(endpoint, accept = 'application/vnd.github+json') {
 }
 
 async function getTotalCommits() {
-  // Uses the commit search API — counts all public commits by the user.
   const data = await ghFetch(
     `/search/commits?q=author:${USERNAME}&per_page=1`,
     'application/vnd.github.cloak-preview+json'
@@ -34,7 +33,6 @@ async function getTotalCommits() {
 }
 
 async function getLanguageStats() {
-  // Paginate through all non-fork repos.
   let repos = [];
   let page  = 1;
   while (true) {
@@ -47,7 +45,6 @@ async function getLanguageStats() {
     page++;
   }
 
-  // Aggregate byte counts per language across all repos in parallel.
   const langTotals = {};
   await Promise.all(
     repos.map(async repo => {
@@ -91,12 +88,11 @@ async function spotifyToken() {
 
 async function getSpotify() {
   if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET || !SPOTIFY_REFRESH_TOKEN) {
-    return null; // Secrets not configured — skip section.
+    return null;
   }
   try {
     const token = await spotifyToken();
 
-    // Check currently playing first.
     const nowRes = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -107,7 +103,6 @@ async function getSpotify() {
       }
     }
 
-    // Fallback: last played track.
     const recentRes = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=1', {
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -122,7 +117,7 @@ async function getSpotify() {
   return null;
 }
 
-// ─── SVG builder ──────────────────────────────────────────────────────────────
+// ─── README builder ───────────────────────────────────────────────────────────
 
 function pad(str, len) {
   const s = String(str);
@@ -134,104 +129,50 @@ function bar(pct, width = 22) {
   return '█'.repeat(filled) + '░'.repeat(width - filled);
 }
 
-function esc(str) {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
-  const GREEN  = '#39d353';
-  const WHITE  = '#e6edf3';
-  const DIM    = '#8b949e';
-  const W      = 800;
-  const FS     = 13;
-  const LH     = 21;
-  const PAD    = 20;
-
-  const g = t => ({ t, c: GREEN });
-  const w = t => ({ t, c: WHITE });
-  const d = t => ({ t, c: DIM });
-  const _ = { t: '', c: WHITE };
-
-  const SEP = d('  ──────────────────────────────────────────');
-
+function buildReadme({ topLangs, repoCount, totalCommits, spotify }) {
+  const SEP         = '  ──────────────────────────────────────────';
   const spotifyIcon = spotify?.playing ? '▶' : '⏸';
-  const spotifyText = spotify
-    ? `  ${esc(spotify.artist)} — ${esc(spotify.track)}`
-    : '  nothing in history';
+  const spotifyLine = spotify
+    ? `  ${spotifyIcon}  ${spotify.artist} — ${spotify.track}`
+    : `  ${spotifyIcon}  nothing in history`;
 
-  const lines = [
-    g('$ ./profile.sh'),
-    _,
-    w('  Tomasz Przyborowski  [/ˈtɔ.maʂ/]'),
-    d('  Fullstack Shopify Developer'),
-    d('  Theme dev (Dawn, Horizon)  ·  Custom Apps'),
-    d('  Poland  ·  coffee-driven'),
-    _,
-    { t: '  I build Shopify stores that are engineered, not assembled.', c: WHITE },
-    { t: '  Aesthetic and fast e-commerce experiences. Clean code. Smart structure.', c: DIM },
-    { t: '  No unnecessary apps. If it needs to be fast, it\'s fast.', c: DIM },
-    { t: '  If it needs to scale, it scales. If it\'s weird — we figure it out.', c: DIM },
-    { t: '  Interested? Ping. Connect. Deploy.', c: DIM },
-    _,
-    SEP,
-    _,
-    d('  core      shopify · liquid · javascript · graphql · node'),
-    d('            vite · gulp · gcp · webflow · hexo'),
-    d('  learning  typescript · react · python · vercel'),
-    _,
-    SEP,
-    _,
-    d(`  commits   ${totalCommits}  ·  repositories  ${repoCount}`),
-    _,
-    ...topLangs.map(({ lang, pct }) =>
-      w(`  ${pad(lang, 14)} ${bar(pct)}  ${String(pct).padStart(3)}%`)
-    ),
-    _,
-    SEP,
-    _,
-    { spotify: true, icon: spotifyIcon, playing: spotify?.playing, text: spotifyText, c: WHITE },
-    _,
-    { cursor: true },
-  ];
+  const langLines = topLangs.length
+    ? topLangs.map(({ lang, pct }) => `  ${pad(lang, 14)} ${bar(pct)}  ${String(pct).padStart(3)}%`).join('\n')
+    : '  no data';
 
-  const H    = PAD + lines.length * LH + PAD;
-  const rows = lines
-    .map((line, i) => {
-      const y = PAD + i * LH;
+  return `\`\`\`bash
+$ ./profile.sh
 
-      if (line.cursor) {
-        return `  <text x="16" y="${y}" fill="${GREEN}" xml:space="preserve">$ <tspan class="blink">█</tspan></text>`;
-      }
+  Tomasz Przyborowski  [/ˈtɔ.maʂ/]
+  Fullstack Shopify Developer
+  Theme dev (Dawn, Horizon)  ·  Custom Apps
+  Poland  ·  coffee-driven
 
-      if (line.spotify) {
-        const iconColor = line.playing ? GREEN : DIM;
-        return `  <text x="16" y="${y}" fill="${WHITE}" xml:space="preserve">  <tspan fill="${iconColor}">${line.icon}</tspan>${line.text}</text>`;
-      }
+  I build Shopify stores that are engineered, not assembled.
+  Aesthetic and fast e-commerce experiences. Clean code. Smart structure.
+  No unnecessary apps. If it needs to be fast, it's fast.
+  If it needs to scale, it scales. If it's weird — we figure it out.
+  Interested? Ping. Connect. Deploy.
 
-      return `  <text x="16" y="${y}" fill="${line.c}" xml:space="preserve">${esc(line.t)}</text>`;
-    })
-    .join('\n');
+${SEP}
 
-  return `<svg width="100%" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    text {
-      font-family: ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, 'Courier New', monospace;
-      font-size: ${FS}px;
-    }
-    @keyframes blink {
-      0%, 49% { opacity: 1; }
-      50%, 100% { opacity: 0; }
-    }
-    .blink { animation: blink 1s step-end infinite; }
-  </style>
+  core      shopify · liquid · javascript · graphql · node
+            vite · gulp · gcp · webflow · hexo
+  learning  typescript · react · python · vercel
 
-  <!-- Content -->
-${rows}
-</svg>`;
+${SEP}
+
+  commits   ${totalCommits}  ·  repositories  ${repoCount}
+
+${langLines}
+
+${SEP}
+
+${spotifyLine}
+
+$ █
+\`\`\`
+`;
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -246,10 +187,10 @@ async function main() {
   console.log('Fetching Spotify...');
   const spotify = await getSpotify();
 
-  console.log('Building SVG...');
-  const svg     = buildSVG({ topLangs, repoCount, totalCommits, spotify });
-  const outPath = path.join(__dirname, '..', 'user.svg');
-  fs.writeFileSync(outPath, svg, 'utf-8');
+  console.log('Building README...');
+  const readme  = buildReadme({ topLangs, repoCount, totalCommits, spotify });
+  const outPath = path.join(__dirname, '..', 'README.md');
+  fs.writeFileSync(outPath, readme, 'utf-8');
   console.log(`Done → ${outPath}`);
 }
 
