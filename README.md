@@ -20,13 +20,13 @@ $ ./profile.sh
 
   ──────────────────────────────────────────
 
-  commits   11323  ·  repositories  0
+  commits   11324  ·  repositories  0
 
   no data
 
   ──────────────────────────────────────────
 
-  ▶  CABLE — Spires
+  ▶  CABLE — Stay There
 
 $ █
 ```
