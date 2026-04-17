@@ -11,6 +11,8 @@ const SPOTIFY_CLIENT_ID     = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
 
+const WAKATIME_API_KEY      = process.env.WAKATIME_API_KEY;
+
 // ─── GitHub ───────────────────────────────────────────────────────────────────
 
 async function ghFetch(endpoint, accept = 'application/vnd.github+json') {
@@ -32,60 +34,22 @@ async function getTotalCommits() {
   return data.total_count || 0;
 }
 
+// ─── WakaTime ─────────────────────────────────────────────────────────────────
+
 async function getLanguageStats() {
-  // Fetch user's own repos
-  let repos = [];
-  let page  = 1;
-  while (true) {
-    const batch = await ghFetch(
-      `/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all`
-    );
-    if (!Array.isArray(batch) || batch.length === 0) break;
-    repos = repos.concat(batch.filter(r => !r.fork));
-    if (batch.length < 100) break;
-    page++;
-  }
+  const key = Buffer.from(WAKATIME_API_KEY).toString('base64');
+  const res  = await fetch('https://wakatime.com/api/v1/users/current/stats/last_30_days', {
+    headers: { Authorization: `Basic ${key}` },
+  });
+  const data = await res.json();
 
-  // Fetch orgs dynamically
-  const orgs = await ghFetch('/user/orgs?per_page=100');
-  if (Array.isArray(orgs)) {
-    for (const org of orgs) {
-      let orgPage = 1;
-      while (true) {
-        const batch = await ghFetch(
-          `/orgs/${org.login}/repos?per_page=100&page=${orgPage}&type=all`
-        );
-        if (!Array.isArray(batch) || batch.length === 0) break;
-        repos = repos.concat(batch.filter(r => !r.fork && r.permissions?.push));
-        if (batch.length < 100) break;
-        orgPage++;
-      }
-    }
-  }
-
-  const langTotals = {};
-  await Promise.all(
-    repos.map(async repo => {
-      const langs = await ghFetch(`/repos/${repo.full_name}/languages`);
-      if (typeof langs !== 'object' || langs === null || langs.message) return;
-      for (const [lang, bytes] of Object.entries(langs)) {
-        langTotals[lang] = (langTotals[lang] || 0) + bytes;
-      }
-    })
-  );
-
-  const EXCLUDE  = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus']);
-  const total    = Object.values(langTotals).reduce((a, b) => a + b, 0);
-  const topLangs = Object.entries(langTotals)
-    .filter(([lang]) => !EXCLUDE.has(lang))
-    .sort(([, a], [, b]) => b - a)
+  const EXCLUDE = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus', 'Other']);
+  const langs   = (data?.data?.languages || [])
+    .filter(l => !EXCLUDE.has(l.name) && l.percent > 0)
     .slice(0, 5)
-    .map(([lang, bytes]) => ({
-      lang,
-      pct: Math.round((bytes / total) * 100),
-    }));
+    .map(l => ({ lang: l.name, pct: Math.round(l.percent) }));
 
-  return { topLangs, repoCount: repos.length };
+  return langs;
 }
 
 // ─── Spotify ──────────────────────────────────────────────────────────────────
@@ -147,7 +111,7 @@ function bar(pct, width = 22) {
   return '█'.repeat(filled) + '░'.repeat(width - filled);
 }
 
-function buildReadme({ topLangs, repoCount, totalCommits, spotify }) {
+function buildReadme({ topLangs, totalCommits, spotify }) {
   const spotifyLine = spotify
     ? `${spotify.artist} — ${spotify.track}`
     : `nothing in history`;
@@ -173,7 +137,7 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-\`commits\` ${totalCommits} &nbsp; \`repositories\` ${repoCount}
+\`commits\` ${totalCommits}
 
 ${langLines}
 
@@ -186,8 +150,8 @@ ${langLines}
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  console.log('Fetching GitHub language stats...');
-  const { topLangs, repoCount } = await getLanguageStats();
+  console.log('Fetching WakaTime language stats...');
+  const topLangs = await getLanguageStats();
 
   console.log('Fetching commit count...');
   const totalCommits = await getTotalCommits();
@@ -196,7 +160,7 @@ async function main() {
   const spotify = await getSpotify();
 
   console.log('Building README...');
-  const readme  = buildReadme({ topLangs, repoCount, totalCommits, spotify });
+  const readme  = buildReadme({ topLangs, totalCommits, spotify });
   const outPath = path.join(__dirname, '..', 'README.md');
   fs.writeFileSync(outPath, readme, 'utf-8');
   console.log(`Done → ${outPath}`);
