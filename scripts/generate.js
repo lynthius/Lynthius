@@ -33,23 +33,17 @@ async function getTotalCommits() {
 }
 
 async function getLanguageStats() {
-  console.log('Token present:', !!GH_TOKEN, 'length:', GH_TOKEN?.length);
-  const testRes = await ghFetch('/user');
-  console.log('Authenticated as:', testRes.login);
-
   let repos = [];
   let page  = 1;
   while (true) {
     const batch = await ghFetch(
       `/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all`
     );
-    console.log('Batch:', Array.isArray(batch), 'length:', batch?.length, 'message:', batch?.message);
     if (!Array.isArray(batch) || batch.length === 0) break;
     repos = repos.concat(batch.filter(r => !r.fork));
     if (batch.length < 100) break;
     page++;
   }
-  console.log('Repos found:', repos.length);
 
   const langTotals = {};
   await Promise.all(
@@ -137,48 +131,39 @@ function bar(pct, width = 22) {
 }
 
 function buildReadme({ topLangs, repoCount, totalCommits, spotify }) {
-  const SEP         = '  ──────────────────────────────────────────';
   const spotifyIcon = spotify?.playing ? '▶' : '⏸';
   const spotifyLine = spotify
-    ? `  ${spotifyIcon}  ${spotify.artist} — ${spotify.track}`
-    : `  ${spotifyIcon}  nothing in history`;
+    ? `${spotifyIcon} ${spotify.artist} — ${spotify.track}`
+    : `${spotifyIcon} nothing in history`;
 
   const langLines = topLangs.length
-    ? topLangs.map(({ lang, pct }) => `  ${pad(lang, 14)} ${bar(pct)}  ${String(pct).padStart(3)}%`).join('\n')
-    : '  no data';
+    ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join('  \n')
+    : '_no data_';
 
   return `\`\`\`bash
 $ ./profile.sh
+\`\`\`
 
-  Tomasz Przyborowski  [/ˈtɔ.maʂ/]
-  Fullstack Shopify Developer
-  Theme dev (Dawn, Horizon)  ·  Custom Apps
-  Poland  ·  coffee-driven
+**Tomasz Przyborowski** \`/ˈtɔ.maʂ/\`
+Fullstack Shopify Developer · Theme dev (Dawn, Horizon) · Poland · coffee-driven
 
-  I build Shopify stores that are engineered, not assembled.
-  Aesthetic and fast e-commerce experiences. Clean code. Smart structure.
-  No unnecessary apps. If it needs to be fast, it's fast.
-  If it needs to scale, it scales. If it's weird — we figure it out.
-  Interested? Ping. Connect. Deploy.
+I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps. If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out. Interested? Ping. Connect. Deploy.
 
-${SEP}
+---
 
-  core      shopify · liquid · javascript · graphql · node
-            vite · gulp · gcp · webflow · hexo
-  learning  typescript · react · python · vercel
+\`core\` &nbsp; shopify · liquid · javascript · graphql · node · vite · gulp · gcp · webflow · hexo
 
-${SEP}
+\`learning\` &nbsp; typescript · react · python · vercel
 
-  commits   ${totalCommits}  ·  repositories  ${repoCount}
+---
+
+\`commits\` ${totalCommits} &nbsp; \`repositories\` ${repoCount}
 
 ${langLines}
 
-${SEP}
+---
 
-${spotifyLine}
-
-$ █
-\`\`\`
+\`recently played\` &nbsp; ${spotifyLine}
 `;
 }
 
