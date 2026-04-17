@@ -15,7 +15,7 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`commits` 11330 &nbsp; `repositories` 82
+`commits` 11331 &nbsp; `repositories` 57
 
 `JavaScript` ███████░░░░░░░░░░░░░░░ 34%  
 `Liquid` ██████░░░░░░░░░░░░░░░░ 26%  
@@ -23,4 +23,4 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`recently played` &nbsp; ▶ Bootleg Contraband — First Landing
+`recently played` &nbsp; ▶ st. art — I won’t leave
