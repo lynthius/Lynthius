@@ -59,8 +59,10 @@ async function getLanguageStats() {
     })
   );
 
-  const total   = Object.values(langTotals).reduce((a, b) => a + b, 0);
+  const EXCLUDE  = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus']);
+  const total    = Object.values(langTotals).reduce((a, b) => a + b, 0);
   const topLangs = Object.entries(langTotals)
+    .filter(([lang]) => !EXCLUDE.has(lang))
     .sort(([, a], [, b]) => b - a)
     .slice(0, 5)
     .map(([lang, bytes]) => ({
@@ -144,12 +146,10 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
   const GREEN  = '#39d353';
   const WHITE  = '#e6edf3';
   const DIM    = '#8b949e';
-  const BG     = '#0d1117';
-  const BORDER = '#30363d';
-  const W      = 640;
+  const W      = 800;
   const FS     = 13;
   const LH     = 21;
-  const PAD    = 24;
+  const PAD    = 20;
 
   const g = t => ({ t, c: GREEN });
   const w = t => ({ t, c: WHITE });
@@ -157,8 +157,8 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
   const _ = { t: '', c: WHITE };
 
   const spotifyLine = spotify
-    ? `  ${spotify.playing ? '▶' : '⏸'}  ${esc(spotify.artist)} — ${esc(spotify.track)}`
-    : '  ⏸  nothing playing';
+    ? `  ⏸  ${esc(spotify.artist)} — ${esc(spotify.track)}`
+    : '  ⏸  nothing in history';
 
   const lines = [
     g('$ whoami'),
@@ -171,8 +171,10 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
     g('$ cat about.txt'),
     _,
     { t: '  I build Shopify stores that are engineered, not assembled.', c: WHITE },
-    { t: '  Aesthetic, fast e-commerce. Clean code. Smart structure.', c: DIM },
-    { t: '  No unnecessary apps. If it needs to scale — it scales.', c: DIM },
+    { t: '  Aesthetic and fast e-commerce experiences. Clean code. Smart structure.', c: DIM },
+    { t: '  No unnecessary apps. If it needs to be fast, it\'s fast.', c: DIM },
+    { t: '  If it needs to scale, it scales. If it\'s weird — we figure it out.', c: DIM },
+    { t: '  Interested? Ping. Connect. Deploy.', c: DIM },
     _,
     g('$ cat stack.txt'),
     _,
@@ -192,7 +194,7 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
       w(`  ${pad(lang, 14)} ${bar(pct)}  ${String(pct).padStart(3)}%`)
     ),
     _,
-    g('$ spotify-cli --now-playing'),
+    g('$ spotify-cli --recently-played'),
     { t: spotifyLine, c: WHITE },
     _,
     g('$ █'),
@@ -206,16 +208,13 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
     })
     .join('\n');
 
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
       font-family: ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, 'Courier New', monospace;
       font-size: ${FS}px;
     }
   </style>
-
-  <!-- Background -->
-  <rect width="${W}" height="${H}" rx="6" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
 
   <!-- Content -->
 ${rows}
