@@ -15,12 +15,14 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`commits` 11329 &nbsp; `repositories` 19
+`commits` 11329 &nbsp; `repositories` 82
 
-`JavaScript` ███████░░░░░░░░░░░░░░░ 34%  
-`Liquid` ██████░░░░░░░░░░░░░░░░ 26%  
-`TypeScript` ░░░░░░░░░░░░░░░░░░░░░░ 2%
+`JavaScript`  NaN%  
+`message`  NaN%  
+`documentation_url`  NaN%  
+`status`  NaN%  
+`Liquid`  NaN%
 
 ---
 
-`recently played` &nbsp; ▶ Bootleg Contraband — Need A Beat - Panic in Detroit Remix
+`recently played` &nbsp; ▶ PIANIKA — Grüv
