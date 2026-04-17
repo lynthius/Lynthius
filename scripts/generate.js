@@ -37,6 +37,8 @@ async function getTotalCommits() {
 async function getLanguageStats() {
   let repos = [];
   let page  = 1;
+
+  // user repos
   while (true) {
     const batch = await ghFetch(
       `/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all`
@@ -45,6 +47,23 @@ async function getLanguageStats() {
     repos = repos.concat(batch.filter(r => !r.fork));
     if (batch.length < 100) break;
     page++;
+  }
+
+  // org repos
+  const orgs = await ghFetch('/user/orgs?per_page=100');
+  if (Array.isArray(orgs)) {
+    for (const org of orgs) {
+      let orgPage = 1;
+      while (true) {
+        const batch = await ghFetch(
+          `/orgs/${org.login}/repos?per_page=100&page=${orgPage}&type=all`
+        );
+        if (!Array.isArray(batch) || batch.length === 0) break;
+        repos = repos.concat(batch.filter(r => !r.fork && r.permissions?.push));
+        if (batch.length < 100) break;
+        orgPage++;
+      }
+    }
   }
 
   const langTotals = {};
