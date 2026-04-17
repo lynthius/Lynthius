@@ -77,10 +77,8 @@ async function getLanguageStats() {
     })
   );
 
-  const EXCLUDE = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus']);
   const total   = Object.values(langTotals).reduce((a, b) => a + b, 0);
   return Object.entries(langTotals)
-    .filter(([lang]) => !EXCLUDE.has(lang))
     .sort(([, a], [, b]) => b - a)
     .slice(0, 5)
     .map(([lang, bytes]) => ({ lang, pct: Math.round((bytes / total) * 100) }));
@@ -142,7 +140,7 @@ function pad(str, len) {
 
 function bar(pct, width = 22) {
   const filled = Math.round((pct / 100) * width);
-  return '█'.repeat(filled) + '░'.repeat(width - filled);
+  return '▪'.repeat(filled) + '·'.repeat(width - filled);
 }
 
 function buildReadme({ topLangs, totalCommits, spotify }) {
