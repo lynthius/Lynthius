@@ -17,10 +17,10 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 `commits` 11329 &nbsp; `repositories` 82
 
-`JavaScript`  NaN%  
 `message`  NaN%  
 `documentation_url`  NaN%  
 `status`  NaN%  
+`JavaScript`  NaN%  
 `Liquid`  NaN%
 
 ---
