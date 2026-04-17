@@ -36,15 +36,14 @@ async function getLanguageStats() {
   console.log('Token present:', !!GH_TOKEN, 'length:', GH_TOKEN?.length);
   const testRes = await ghFetch('/user');
   console.log('Authenticated as:', testRes.login);
-  // Paginate through all non-fork repos.
 
-  
   let repos = [];
   let page  = 1;
   while (true) {
     const batch = await ghFetch(
-      `/user/repos?per_page=100&page=${page}&type=owner&affiliation=all`
+      `/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all`
     );
+    console.log('Batch:', Array.isArray(batch), 'length:', batch?.length, 'message:', batch?.message);
     if (!Array.isArray(batch) || batch.length === 0) break;
     repos = repos.concat(batch.filter(r => !r.fork));
     if (batch.length < 100) break;
@@ -74,6 +73,7 @@ async function getLanguageStats() {
       pct: Math.round((bytes / total) * 100),
     }));
 
+  console.log('Top langs:', topLangs.map(l => l.lang).join(', '));
   return { topLangs, repoCount: repos.length };
 }
 
