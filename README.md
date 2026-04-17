@@ -20,13 +20,15 @@ $ ./profile.sh
 
   ──────────────────────────────────────────
 
-  commits   11326  ·  repositories  0
+  commits   11327  ·  repositories  19
 
-  no data
+  JavaScript     ███████░░░░░░░░░░░░░░░   34%
+  Liquid         ██████░░░░░░░░░░░░░░░░   26%
+  TypeScript     ░░░░░░░░░░░░░░░░░░░░░░    2%
 
   ──────────────────────────────────────────
 
-  ▶  XYXXYYYXXYX — 556.
+  ▶  XYXXYYYXXYX — Thoughtpolice.
 
 $ █
 ```
