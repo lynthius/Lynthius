@@ -34,22 +34,37 @@ async function getTotalCommits() {
   return data.total_count || 0;
 }
 
-// ─── WakaTime ─────────────────────────────────────────────────────────────────
-
 async function getLanguageStats() {
-  const key = Buffer.from(WAKATIME_API_KEY).toString('base64');
-  const res  = await fetch('https://wakatime.com/api/v1/users/current/stats/last_30_days', {
-    headers: { Authorization: `Basic ${key}` },
-  });
-  const data = await res.json();
+  let repos = [];
+  let page  = 1;
+  while (true) {
+    const batch = await ghFetch(
+      `/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all`
+    );
+    if (!Array.isArray(batch) || batch.length === 0) break;
+    repos = repos.concat(batch.filter(r => !r.fork));
+    if (batch.length < 100) break;
+    page++;
+  }
 
-  const EXCLUDE = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus', 'Other']);
-  const langs   = (data?.data?.languages || [])
-    .filter(l => !EXCLUDE.has(l.name) && l.percent > 0)
+  const langTotals = {};
+  await Promise.all(
+    repos.map(async repo => {
+      const langs = await ghFetch(`/repos/${repo.full_name}/languages`);
+      if (typeof langs !== 'object' || langs === null || langs.message) return;
+      for (const [lang, bytes] of Object.entries(langs)) {
+        langTotals[lang] = (langTotals[lang] || 0) + bytes;
+      }
+    })
+  );
+
+  const EXCLUDE = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus']);
+  const total   = Object.values(langTotals).reduce((a, b) => a + b, 0);
+  return Object.entries(langTotals)
+    .filter(([lang]) => !EXCLUDE.has(lang))
+    .sort(([, a], [, b]) => b - a)
     .slice(0, 5)
-    .map(l => ({ lang: l.name, pct: Math.round(l.percent) }));
-
-  return langs;
+    .map(([lang, bytes]) => ({ lang, pct: Math.round((bytes / total) * 100) }));
 }
 
 // ─── Spotify ──────────────────────────────────────────────────────────────────
