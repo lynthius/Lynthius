@@ -87,30 +87,66 @@ async function spotifyToken() {
   return data.access_token;
 }
 
+// async function getSpotify() {
+//   if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET || !SPOTIFY_REFRESH_TOKEN) {
+//     return null; // Secrets not configured — skip section.
+//   }
+//   try {
+//     const token = await spotifyToken();
+
+//     // Check currently playing first.
+//     const nowRes = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
+//       headers: { Authorization: `Bearer ${token}` },
+//     });
+//     if (nowRes.status === 200) {
+//       const data = await nowRes.json();
+//       if (data?.item) {
+//         return { track: data.item.name, artist: data.item.artists[0].name, playing: data.is_playing };
+//       }
+//     }
+
+//     // Fallback: last played track.
+//     const recentRes = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=1', {
+//       headers: { Authorization: `Bearer ${token}` },
+//     });
+//     if (recentRes.ok) {
+//       const data  = await recentRes.json();
+//       const track = data.items?.[0]?.track;
+//       if (track) return { track: track.name, artist: track.artists[0].name, playing: false };
+//     }
+//   } catch (err) {
+//     console.warn('Spotify fetch failed:', err.message);
+//   }
+//   return null;
+// }
 async function getSpotify() {
   if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET || !SPOTIFY_REFRESH_TOKEN) {
-    return null; // Secrets not configured — skip section.
+    return null;
   }
   try {
     const token = await spotifyToken();
+    console.log('Spotify token OK:', !!token);
 
-    // Check currently playing first.
     const nowRes = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
       headers: { Authorization: `Bearer ${token}` },
     });
+    console.log('Now playing status:', nowRes.status);
+
     if (nowRes.status === 200) {
       const data = await nowRes.json();
+      console.log('Now playing data:', JSON.stringify(data?.item?.name), data?.is_playing);
       if (data?.item) {
         return { track: data.item.name, artist: data.item.artists[0].name, playing: data.is_playing };
       }
     }
 
-    // Fallback: last played track.
     const recentRes = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=1', {
       headers: { Authorization: `Bearer ${token}` },
     });
+    console.log('Recently played status:', recentRes.status);
     if (recentRes.ok) {
       const data  = await recentRes.json();
+      console.log('Recently played:', JSON.stringify(data?.items?.[0]?.track?.name));
       const track = data.items?.[0]?.track;
       if (track) return { track: track.name, artist: track.artists[0].name, playing: false };
     }
