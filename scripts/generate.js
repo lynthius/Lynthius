@@ -43,7 +43,7 @@ async function getLanguageStats() {
   let page  = 1;
   while (true) {
     const batch = await ghFetch(
-      `/user/repos?per_page=100&page=${page}&type=owner&affiliation=owner`
+      `/user/repos?per_page=100&page=${page}&type=owner&affiliation=all`
     );
     if (!Array.isArray(batch) || batch.length === 0) break;
     repos = repos.concat(batch.filter(r => !r.fork));
