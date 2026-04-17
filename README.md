@@ -15,14 +15,17 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`commits` 11339
+`commits` 11340
 
-`Liquid` ▪▪▪▪▪▪▪▪▪▪▪▪▪▪········ 65%  
-`HTML` ▪▪···················· 8%  
-`JavaScript` ▪▪···················· 8%  
-`CSS` ▪▪···················· 7%  
-`TypeScript` ▪····················· 5%
+`Liquid` ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░ 65%  
+`HTML` ▓▓░░░░░░░░░░░░░░░░░░░░ 8%  
+`JavaScript` ▓▓░░░░░░░░░░░░░░░░░░░░ 8%  
+`CSS` ▓▓░░░░░░░░░░░░░░░░░░░░ 7%  
+`TypeScript` ▓░░░░░░░░░░░░░░░░░░░░░ 5%  
+`SCSS` ▓░░░░░░░░░░░░░░░░░░░░░ 3%  
+`Dart` ░░░░░░░░░░░░░░░░░░░░░░ 2%  
+`Swift` ░░░░░░░░░░░░░░░░░░░░░░ 1%
 
 ---
 
-`recently played` &nbsp; David Berrie — thinkaboutit
+`recently played` &nbsp; Everything Nothing — Pe Rompe
