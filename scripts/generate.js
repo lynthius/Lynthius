@@ -150,7 +150,7 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
   return `
 
 **Tomasz** \`/ˈtɔ.maʂ/\`<br>
-Fullstack Shopify Engineer · Frontend<br><br>
+Fullstack Shopify Engineer · Frontend Developer<br>
 
 I build Shopify stores that are engineered, not assembled.<br>
 Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.<br>
