@@ -149,13 +149,13 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
 
   return `
 
-**Tomasz** \`/ˈtɔ.maʂ/\`\`
-Fullstack Shopify Engineer · Frontend\`
+**Tomasz** \`/ˈtɔ.maʂ/\`<br>
+Fullstack Shopify Engineer · Frontend<br><br>
 
-I build Shopify stores that are engineered, not assembled.\`
-Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.\`
-If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out.\`
-Interested? Ping. Connect. Deploy.
+I build Shopify stores that are engineered, not assembled.<br>
+Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.<br>
+If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out.<br>
+Interested? Ping. Connect. Deploy.<br>
 
 --
 
