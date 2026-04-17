@@ -1,7 +1,7 @@
 
 
 **Tomasz** `/ˈtɔ.maʂ/`<br>
-Fullstack Shopify Engineer · Frontend<br><br>
+Fullstack Shopify Engineer · Frontend Developer<br>
 
 I build Shopify stores that are engineered, not assembled.<br>
 Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.<br>
@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 11342
+`commits` 11344
 
 `JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 34%  
 `HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 33%  
@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Bootleg Contraband — Take Me Higher - Even Higher Remix
+`recently played` &nbsp; Bootleg Contraband — Triflin' Bitch
