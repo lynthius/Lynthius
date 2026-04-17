@@ -33,6 +33,12 @@ async function getTotalCommits() {
 }
 
 async function getLanguageStats() {
+  console.log('Token present:', !!GH_TOKEN, 'length:', GH_TOKEN?.length);
+  const testRes = await ghFetch('/user');
+  console.log('Authenticated as:', testRes.login);
+  // Paginate through all non-fork repos.
+
+  
   let repos = [];
   let page  = 1;
   while (true) {
