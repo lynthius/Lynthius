@@ -1,4 +1,4 @@
-<svg width="640" height="825" viewBox="0 0 640 825" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 800 796" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
       font-family: ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, 'Courier New', monospace;
@@ -6,45 +6,41 @@
     }
   </style>
 
-  <!-- Background -->
-  <rect width="640" height="825" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-
   <!-- Content -->
-  <text x="16" y="24" fill="#39d353" xml:space="preserve">$ whoami</text>
-  <text x="16" y="45" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="66" fill="#e6edf3" xml:space="preserve">  Tomasz Przyborowski  [/ˈtɔ.maʂ/]</text>
-  <text x="16" y="87" fill="#8b949e" xml:space="preserve">  Fullstack Shopify Developer</text>
-  <text x="16" y="108" fill="#8b949e" xml:space="preserve">  Theme dev (Dawn, Horizon)  ·  Custom Apps</text>
-  <text x="16" y="129" fill="#8b949e" xml:space="preserve">  Poland  ·  coffee-driven</text>
-  <text x="16" y="150" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="171" fill="#39d353" xml:space="preserve">$ cat about.txt</text>
-  <text x="16" y="192" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="213" fill="#e6edf3" xml:space="preserve">  I build Shopify stores that are engineered, not assembled.</text>
-  <text x="16" y="234" fill="#8b949e" xml:space="preserve">  Aesthetic, fast e-commerce. Clean code. Smart structure.</text>
-  <text x="16" y="255" fill="#8b949e" xml:space="preserve">  No unnecessary apps. If it needs to scale — it scales.</text>
-  <text x="16" y="276" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="297" fill="#39d353" xml:space="preserve">$ cat stack.txt</text>
-  <text x="16" y="318" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="339" fill="#8b949e" xml:space="preserve">  // core</text>
-  <text x="16" y="360" fill="#e6edf3" xml:space="preserve">  shopify  ·  liquid  ·  javascript  ·  graphql  ·  node</text>
-  <text x="16" y="381" fill="#e6edf3" xml:space="preserve">  vite  ·  gulp  ·  gcp  ·  webflow  ·  hexo</text>
-  <text x="16" y="402" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="423" fill="#8b949e" xml:space="preserve">  // exploring</text>
-  <text x="16" y="444" fill="#e6edf3" xml:space="preserve">  typescript  ·  react  ·  python  ·  vercel</text>
-  <text x="16" y="465" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="486" fill="#39d353" xml:space="preserve">$ git log --oneline | wc -l</text>
-  <text x="16" y="507" fill="#8b949e" xml:space="preserve">  → 11312 commits  ·  10 repositories</text>
-  <text x="16" y="528" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="549" fill="#39d353" xml:space="preserve">$ cat languages.txt</text>
-  <text x="16" y="570" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="591" fill="#e6edf3" xml:space="preserve">  HTML           ████████████░░░░░░░░░░   54%</text>
-  <text x="16" y="612" fill="#e6edf3" xml:space="preserve">  JavaScript     █████████░░░░░░░░░░░░░   42%</text>
-  <text x="16" y="633" fill="#e6edf3" xml:space="preserve">  CSS            ░░░░░░░░░░░░░░░░░░░░░░    2%</text>
-  <text x="16" y="654" fill="#e6edf3" xml:space="preserve">  SCSS           ░░░░░░░░░░░░░░░░░░░░░░    2%</text>
-  <text x="16" y="675" fill="#e6edf3" xml:space="preserve">  Stylus         ░░░░░░░░░░░░░░░░░░░░░░    0%</text>
-  <text x="16" y="696" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="717" fill="#39d353" xml:space="preserve">$ spotify-cli --now-playing</text>
-  <text x="16" y="738" fill="#e6edf3" xml:space="preserve">  ▶  Roswitha Nash — Walhalla - Kon Faber Remix</text>
-  <text x="16" y="759" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="780" fill="#39d353" xml:space="preserve">$ █</text>
+  <text x="16" y="20" fill="#39d353" xml:space="preserve">$ whoami</text>
+  <text x="16" y="41" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="62" fill="#e6edf3" xml:space="preserve">  Tomasz Przyborowski  [/ˈtɔ.maʂ/]</text>
+  <text x="16" y="83" fill="#8b949e" xml:space="preserve">  Fullstack Shopify Developer</text>
+  <text x="16" y="104" fill="#8b949e" xml:space="preserve">  Theme dev (Dawn, Horizon)  ·  Custom Apps</text>
+  <text x="16" y="125" fill="#8b949e" xml:space="preserve">  Poland  ·  coffee-driven</text>
+  <text x="16" y="146" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="167" fill="#39d353" xml:space="preserve">$ cat about.txt</text>
+  <text x="16" y="188" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="209" fill="#e6edf3" xml:space="preserve">  I build Shopify stores that are engineered, not assembled.</text>
+  <text x="16" y="230" fill="#8b949e" xml:space="preserve">  Aesthetic and fast e-commerce experiences. Clean code. Smart structure.</text>
+  <text x="16" y="251" fill="#8b949e" xml:space="preserve">  No unnecessary apps. If it needs to be fast, it's fast.</text>
+  <text x="16" y="272" fill="#8b949e" xml:space="preserve">  If it needs to scale, it scales. If it's weird — we figure it out.</text>
+  <text x="16" y="293" fill="#8b949e" xml:space="preserve">  Interested? Ping. Connect. Deploy.</text>
+  <text x="16" y="314" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="335" fill="#39d353" xml:space="preserve">$ cat stack.txt</text>
+  <text x="16" y="356" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="377" fill="#8b949e" xml:space="preserve">  // core</text>
+  <text x="16" y="398" fill="#e6edf3" xml:space="preserve">  shopify  ·  liquid  ·  javascript  ·  graphql  ·  node</text>
+  <text x="16" y="419" fill="#e6edf3" xml:space="preserve">  vite  ·  gulp  ·  gcp  ·  webflow  ·  hexo</text>
+  <text x="16" y="440" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="461" fill="#8b949e" xml:space="preserve">  // exploring</text>
+  <text x="16" y="482" fill="#e6edf3" xml:space="preserve">  typescript  ·  react  ·  python  ·  vercel</text>
+  <text x="16" y="503" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="524" fill="#39d353" xml:space="preserve">$ git log --oneline | wc -l</text>
+  <text x="16" y="545" fill="#8b949e" xml:space="preserve">  → 11313 commits  ·  10 repositories</text>
+  <text x="16" y="566" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="587" fill="#39d353" xml:space="preserve">$ cat languages.txt</text>
+  <text x="16" y="608" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="629" fill="#e6edf3" xml:space="preserve">  JavaScript     █████████░░░░░░░░░░░░░   42%</text>
+  <text x="16" y="650" fill="#e6edf3" xml:space="preserve">  TypeScript     ░░░░░░░░░░░░░░░░░░░░░░    0%</text>
+  <text x="16" y="671" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="692" fill="#39d353" xml:space="preserve">$ spotify-cli --recently-played</text>
+  <text x="16" y="713" fill="#e6edf3" xml:space="preserve">  ⏸  Farry — Joubi</text>
+  <text x="16" y="734" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="755" fill="#39d353" xml:space="preserve">$ █</text>
 </svg>
