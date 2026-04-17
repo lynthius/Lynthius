@@ -156,20 +156,20 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
   const d = t => ({ t, c: DIM });
   const _ = { t: '', c: WHITE };
 
-  const spotifyIcon    = spotify?.playing ? '▶' : '⏸';
-  const spotifyText    = spotify
+  const SEP = d('  ──────────────────────────────────────────');
+
+  const spotifyIcon = spotify?.playing ? '▶' : '⏸';
+  const spotifyText = spotify
     ? `  ${esc(spotify.artist)} — ${esc(spotify.track)}`
     : '  nothing in history';
 
   const lines = [
-    g('$ whoami'),
+    g('$ ./profile.sh'),
     _,
     w('  Tomasz Przyborowski  [/ˈtɔ.maʂ/]'),
     d('  Fullstack Shopify Developer'),
     d('  Theme dev (Dawn, Horizon)  ·  Custom Apps'),
     d('  Poland  ·  coffee-driven'),
-    _,
-    g('$ cat about.txt'),
     _,
     { t: '  I build Shopify stores that are engineered, not assembled.', c: WHITE },
     { t: '  Aesthetic and fast e-commerce experiences. Clean code. Smart structure.', c: DIM },
@@ -177,25 +177,22 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
     { t: '  If it needs to scale, it scales. If it\'s weird — we figure it out.', c: DIM },
     { t: '  Interested? Ping. Connect. Deploy.', c: DIM },
     _,
-    g('$ cat stack.txt'),
+    SEP,
     _,
-    d('  // core'),
-    w('  shopify  ·  liquid  ·  javascript  ·  graphql  ·  node'),
-    w('  vite  ·  gulp  ·  gcp  ·  webflow  ·  hexo'),
+    d('  core      shopify · liquid · javascript · graphql · node'),
+    d('            vite · gulp · gcp · webflow · hexo'),
+    d('  learning  typescript · react · python · vercel'),
     _,
-    d('  // exploring'),
-    w('  typescript  ·  react  ·  python  ·  vercel'),
+    SEP,
     _,
-    g('$ git log --oneline | wc -l'),
-    d(`  → ${totalCommits} commits  ·  ${repoCount} repositories`),
-    _,
-    g('$ cat languages.txt'),
+    d(`  commits   ${totalCommits}  ·  repositories  ${repoCount}`),
     _,
     ...topLangs.map(({ lang, pct }) =>
       w(`  ${pad(lang, 14)} ${bar(pct)}  ${String(pct).padStart(3)}%`)
     ),
     _,
-    g('$ spotify-cli --recently-played'),
+    SEP,
+    _,
     { spotify: true, icon: spotifyIcon, playing: spotify?.playing, text: spotifyText, c: WHITE },
     _,
     { cursor: true },
@@ -212,8 +209,7 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
 
       if (line.spotify) {
         const iconColor = line.playing ? GREEN : DIM;
-        const animAttr  = line.playing ? ' class="pulse"' : '';
-        return `  <text x="16" y="${y}" fill="${WHITE}" xml:space="preserve">  <tspan fill="${iconColor}"${animAttr}>${line.icon}</tspan>${line.text}</text>`;
+        return `  <text x="16" y="${y}" fill="${WHITE}" xml:space="preserve">  <tspan fill="${iconColor}">${line.icon}</tspan>${line.text}</text>`;
       }
 
       return `  <text x="16" y="${y}" fill="${line.c}" xml:space="preserve">${esc(line.t)}</text>`;
@@ -231,12 +227,6 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
       50%, 100% { opacity: 0; }
     }
     .blink { animation: blink 1s step-end infinite; }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
-    }
-    .pulse { animation: pulse 1.5s ease-in-out infinite; }
   </style>
 
   <!-- Content -->
