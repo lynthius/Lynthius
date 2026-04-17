@@ -1,4 +1,4 @@
-<svg width="100%" viewBox="0 0 800 796" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 800 754" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
       font-family: ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, 'Courier New', monospace;
@@ -32,15 +32,13 @@
   <text x="16" y="482" fill="#e6edf3" xml:space="preserve">  typescript  ·  react  ·  python  ·  vercel</text>
   <text x="16" y="503" fill="#e6edf3" xml:space="preserve"></text>
   <text x="16" y="524" fill="#39d353" xml:space="preserve">$ git log --oneline | wc -l</text>
-  <text x="16" y="545" fill="#8b949e" xml:space="preserve">  → 11313 commits  ·  10 repositories</text>
+  <text x="16" y="545" fill="#8b949e" xml:space="preserve">  → 11313 commits  ·  0 repositories</text>
   <text x="16" y="566" fill="#e6edf3" xml:space="preserve"></text>
   <text x="16" y="587" fill="#39d353" xml:space="preserve">$ cat languages.txt</text>
   <text x="16" y="608" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="629" fill="#e6edf3" xml:space="preserve">  JavaScript     █████████░░░░░░░░░░░░░   42%</text>
-  <text x="16" y="650" fill="#e6edf3" xml:space="preserve">  TypeScript     ░░░░░░░░░░░░░░░░░░░░░░    0%</text>
-  <text x="16" y="671" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="692" fill="#39d353" xml:space="preserve">$ spotify-cli --recently-played</text>
-  <text x="16" y="713" fill="#e6edf3" xml:space="preserve">  ⏸  Farry — Joubi</text>
-  <text x="16" y="734" fill="#e6edf3" xml:space="preserve"></text>
-  <text x="16" y="755" fill="#39d353" xml:space="preserve">$ █</text>
+  <text x="16" y="629" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="650" fill="#39d353" xml:space="preserve">$ spotify-cli --recently-played</text>
+  <text x="16" y="671" fill="#e6edf3" xml:space="preserve">  ⏸  Kon Faber — Rosemary Patana</text>
+  <text x="16" y="692" fill="#e6edf3" xml:space="preserve"></text>
+  <text x="16" y="713" fill="#39d353" xml:space="preserve">$ █</text>
 </svg>
