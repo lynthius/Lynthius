@@ -15,14 +15,10 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`commits` 11333 &nbsp; `repositories` 57
+`commits` 11334
 
-`Liquid` ██████████████░░░░░░░░ 65%  
-`JavaScript` ██░░░░░░░░░░░░░░░░░░░░ 8%  
-`TypeScript` █░░░░░░░░░░░░░░░░░░░░░ 5%  
-`Dart` ░░░░░░░░░░░░░░░░░░░░░░ 2%  
-`Swift` ░░░░░░░░░░░░░░░░░░░░░░ 1%
+_no data_
 
 ---
 
-`recently played` &nbsp; Liviu Groza — Quarters
+`recently played` &nbsp; We Are Alive! — Electrum
