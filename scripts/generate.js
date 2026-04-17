@@ -33,11 +33,15 @@ async function getTotalCommits() {
 }
 
 async function getLanguageStats() {
+  const ORGS = ['noo-ma']; // add more org names here if needed
+
   let repos = [];
   let page  = 1;
+
+  // Fetch user's own repos
   while (true) {
     const batch = await ghFetch(
-      `/user/repos?per_page=100&page=${page}&affiliation=owner,organization_member&visibility=all`
+      `/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all`
     );
     if (!Array.isArray(batch) || batch.length === 0) break;
     repos = repos.concat(batch.filter(r => !r.fork));
@@ -45,10 +49,24 @@ async function getLanguageStats() {
     page++;
   }
 
+  // Fetch repos from each org explicitly
+  for (const org of ORGS) {
+    let orgPage = 1;
+    while (true) {
+      const batch = await ghFetch(
+        `/orgs/${org}/repos?per_page=100&page=${orgPage}&type=all`
+      );
+      if (!Array.isArray(batch) || batch.length === 0) break;
+      repos = repos.concat(batch.filter(r => !r.fork));
+      if (batch.length < 100) break;
+      orgPage++;
+    }
+  }
+
   const langTotals = {};
   await Promise.all(
     repos.map(async repo => {
-      const langs = await ghFetch(`/repos/${USERNAME}/${repo.name}/languages`);
+      const langs = await ghFetch(`/repos/${repo.full_name}/languages`);
       if (typeof langs !== 'object' || langs === null || langs.message) return;
       for (const [lang, bytes] of Object.entries(langs)) {
         langTotals[lang] = (langTotals[lang] || 0) + bytes;
@@ -67,7 +85,6 @@ async function getLanguageStats() {
       pct: Math.round((bytes / total) * 100),
     }));
 
-  console.log('Top langs:', topLangs.map(l => l.lang).join(', '));
   return { topLangs, repoCount: repos.length };
 }
 
@@ -131,10 +148,9 @@ function bar(pct, width = 22) {
 }
 
 function buildReadme({ topLangs, repoCount, totalCommits, spotify }) {
-  const spotifyIcon = spotify?.playing ? '▶' : '⏸';
   const spotifyLine = spotify
-    ? `${spotifyIcon} ${spotify.artist} — ${spotify.track}`
-    : `${spotifyIcon} nothing in history`;
+    ? `${spotify.artist} — ${spotify.track}`
+    : `nothing in history`;
 
   const langLines = topLangs.length
     ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join('  \n')
