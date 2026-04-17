@@ -147,28 +147,29 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
     ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join('  \n')
     : '_no data_';
 
-  return `\`\`\`bash
-$ ./profile.sh
-\`\`\`
+  return `
 
-**Tomasz Przyborowski** \`/ˈtɔ.maʂ/\`
-Fullstack Shopify Developer · Theme dev (Dawn, Horizon) · Poland · coffee-driven
+**Tomasz** \`/ˈtɔ.maʂ/\`\`
+Fullstack Shopify Engineer · Frontend\`
 
-I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps. If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out. Interested? Ping. Connect. Deploy.
+I build Shopify stores that are engineered, not assembled.\`
+Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.\`
+If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out.\`
+Interested? Ping. Connect. Deploy.
 
----
+--
 
 \`core\` &nbsp; shopify · liquid · javascript · graphql · node · vite · gulp · gcp · webflow · hexo
 
 \`learning\` &nbsp; typescript · react · python · vercel
 
----
+--
 
 \`commits\` ${totalCommits}
 
 ${langLines}
 
----
+--
 
 \`recently played\` &nbsp; ${spotifyLine}
 `;
