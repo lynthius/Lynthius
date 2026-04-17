@@ -50,6 +50,7 @@ async function getLanguageStats() {
     if (batch.length < 100) break;
     page++;
   }
+  console.log('Repos found:', repos.length);
 
   const langTotals = {};
   await Promise.all(
