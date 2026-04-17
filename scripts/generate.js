@@ -56,7 +56,7 @@ async function getLanguageStats() {
           `/orgs/${org.login}/repos?per_page=100&page=${orgPage}&type=all`
         );
         if (!Array.isArray(batch) || batch.length === 0) break;
-        repos = repos.concat(batch.filter(r => !r.fork));
+        repos = repos.concat(batch.filter(r => !r.fork && r.permissions?.push));
         if (batch.length < 100) break;
         orgPage++;
       }
