@@ -156,9 +156,10 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
   const d = t => ({ t, c: DIM });
   const _ = { t: '', c: WHITE };
 
-  const spotifyLine = spotify
-    ? `  ⏸  ${esc(spotify.artist)} — ${esc(spotify.track)}`
-    : '  ⏸  nothing in history';
+  const spotifyIcon    = spotify?.playing ? '▶' : '⏸';
+  const spotifyText    = spotify
+    ? `  ${esc(spotify.artist)} — ${esc(spotify.track)}`
+    : '  nothing in history';
 
   const lines = [
     g('$ whoami'),
@@ -195,15 +196,26 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
     ),
     _,
     g('$ spotify-cli --recently-played'),
-    { t: spotifyLine, c: WHITE },
+    { spotify: true, icon: spotifyIcon, playing: spotify?.playing, text: spotifyText, c: WHITE },
     _,
-    g('$ █'),
+    { cursor: true },
   ];
 
   const H    = PAD + lines.length * LH + PAD;
   const rows = lines
     .map((line, i) => {
       const y = PAD + i * LH;
+
+      if (line.cursor) {
+        return `  <text x="16" y="${y}" fill="${GREEN}" xml:space="preserve">$ <tspan class="blink">█</tspan></text>`;
+      }
+
+      if (line.spotify) {
+        const iconColor = line.playing ? GREEN : DIM;
+        const animAttr  = line.playing ? ' class="pulse"' : '';
+        return `  <text x="16" y="${y}" fill="${WHITE}" xml:space="preserve">  <tspan fill="${iconColor}"${animAttr}>${line.icon}</tspan>${line.text}</text>`;
+      }
+
       return `  <text x="16" y="${y}" fill="${line.c}" xml:space="preserve">${esc(line.t)}</text>`;
     })
     .join('\n');
@@ -214,6 +226,17 @@ function buildSVG({ topLangs, repoCount, totalCommits, spotify }) {
       font-family: ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, 'Courier New', monospace;
       font-size: ${FS}px;
     }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .blink { animation: blink 1s step-end infinite; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    .pulse { animation: pulse 1.5s ease-in-out infinite; }
   </style>
 
   <!-- Content -->
