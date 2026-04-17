@@ -23,4 +23,4 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`recently played` &nbsp; ▶ st. art — I won’t leave
+`recently played` &nbsp; ▶ Liviu Groza — Lo To Hi
