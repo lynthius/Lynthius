@@ -49,7 +49,7 @@ async function getLanguageStats() {
   await Promise.all(
     repos.map(async repo => {
       const langs = await ghFetch(`/repos/${USERNAME}/${repo.name}/languages`);
-      if (typeof langs !== 'object') return;
+      if (typeof langs !== 'object' || langs === null || langs.message) return;
       for (const [lang, bytes] of Object.entries(langs)) {
         langTotals[lang] = (langTotals[lang] || 0) + bytes;
       }
