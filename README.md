@@ -15,7 +15,7 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`commits` 11332 &nbsp; `repositories` 57
+`commits` 11333 &nbsp; `repositories` 57
 
 `Liquid` ██████████████░░░░░░░░ 65%  
 `JavaScript` ██░░░░░░░░░░░░░░░░░░░░ 8%  
@@ -25,4 +25,4 @@ I build Shopify stores that are engineered, not assembled. Aesthetic and fast e-
 
 ---
 
-`recently played` &nbsp; Liviu Groza — Lo To Hi
+`recently played` &nbsp; Liviu Groza — Quarters
