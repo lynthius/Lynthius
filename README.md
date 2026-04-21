@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Bootleg Contraband — Triflin' Bitch
+`recently played` &nbsp; Vlad Jet — Ethereum
