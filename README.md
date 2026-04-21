@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Vlad Jet — Ethereum
+`recently played` &nbsp; Filterwolf — Love Code
