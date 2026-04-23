@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Paktofonika — Jestem Bogiem
+`recently played` &nbsp; Paktofonika — W Peunej Gotowości
