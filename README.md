@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; The Brotet — Shiki No Uta
+`recently played` &nbsp; Paktofonika — Jestem Bogiem
