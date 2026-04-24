@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 11348
+`commits` 11511
 
 `JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 34%  
 `HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 33%  
@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Paktofonika — W Peunej Gotowości
+`recently played` &nbsp; Eminem — Love The Way You Lie
