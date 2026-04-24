@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; JWP/BC — WNTM
+`recently played` &nbsp; JWP/BC — Uniwersytet
