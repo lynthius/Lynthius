@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; JWP/BC — My umiemy tylko tak
+`recently played` &nbsp; JWP/BC — WNTM
