@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Eminem — Love The Way You Lie
+`recently played` &nbsp; JWP/BC — JWP Krew
