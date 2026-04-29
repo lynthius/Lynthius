@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; JWP/BC — Głodny kot
+`recently played` &nbsp; Włodi — Szkoła Życia
