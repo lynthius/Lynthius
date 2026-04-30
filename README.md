@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Big L — Deadly Combination (feat. 2Pac)
+`recently played` &nbsp; Kanye West — KING
