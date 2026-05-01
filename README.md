@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Kanye West — KING
+`recently played` &nbsp; 2Pac — Ambitionz Az A Ridah
