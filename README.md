@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 2Pac — Ambitionz Az A Ridah
+`recently played` &nbsp; Chihiro Yamanaka — 乙女の祈り
