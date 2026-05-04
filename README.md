@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 11551
+`commits` 11554
 
 `JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 34%  
 `HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 33%  
@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Chihiro Yamanaka — 乙女の祈り
+`recently played` &nbsp; Ryo Fukui — Willow Weep For Me
