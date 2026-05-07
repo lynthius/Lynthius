@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Wais — GŁÓWNE ROLE
+`recently played` &nbsp; Ice Cube — It Takes A Nation
