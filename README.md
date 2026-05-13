@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Daft Punk — GLBTM (Studio Outtakes)
+`recently played` &nbsp; Daft Punk — The Writing of Fragments of Time (feat. Todd Edwards)
