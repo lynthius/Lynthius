@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Daft Punk — The Writing of Fragments of Time (feat. Todd Edwards)
+`recently played` &nbsp; Daft Punk — Touch (2021 Epilogue) [feat. Paul Williams]
