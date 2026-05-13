@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Ice Cube — Arrest The President
+`recently played` &nbsp; Daft Punk — GLBTM (Studio Outtakes)
