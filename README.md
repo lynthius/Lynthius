@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 11582
+`commits` 11589
 
 `JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 34%  
 `HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 33%  
