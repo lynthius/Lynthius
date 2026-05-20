@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; J.Fur — Building Up - Aali Rehman Remix
+`recently played` &nbsp; Rhode & Brown — Memory Palace
