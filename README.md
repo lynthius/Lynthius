@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Rhode & Brown — Memory Palace
+`recently played` &nbsp; Philip Glass — Akhnaten: Act I, Prelude: Verse 3
