@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Billie Holiday — Easy To Love
+`recently played` &nbsp; Wynonie Harris — Grandma Plays The Numbers
