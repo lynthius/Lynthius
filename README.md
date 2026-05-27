@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Jack Shaindlin — I'm Tickled Pink
+`recently played` &nbsp; Billie Holiday — Easy To Love
