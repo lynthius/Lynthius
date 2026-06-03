@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Wynonie Harris — Grandma Plays The Numbers
+`recently played` &nbsp; nothing in history
