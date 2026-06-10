@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Rakim — L.I. Interlude
+`recently played` &nbsp; Black Star — Astronomy (8th Light)
