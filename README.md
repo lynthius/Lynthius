@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Black Star — Astronomy (8th Light)
+`recently played` &nbsp; Big L — The Heist
