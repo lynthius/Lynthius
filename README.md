@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Masayoshi Takanaka — PLASTIC TEARS
+`recently played` &nbsp; 稲垣次郎とソウル・メディア — ブルー・ブラッド
