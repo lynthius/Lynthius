@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 稲垣次郎とソウル・メディア — ブルー・ブラッド
+`recently played` &nbsp; Ryo Fukui — Horizon (Remastered 2025)
