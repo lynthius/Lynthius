@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Ryo Fukui — Horizon (Remastered 2025)
+`recently played` &nbsp; Yuji Ohno — Scorch To Kirizumi
