@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Ludwig Göransson — Kitty Comes To Testify
+`recently played` &nbsp; Hans Zimmer — Mind-killer
