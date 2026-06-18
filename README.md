@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Hans Zimmer — Mind-killer
+`recently played` &nbsp; Madvillain — Meat Grinder
