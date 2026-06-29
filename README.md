@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Greenwolve — Squid
+`recently played` &nbsp; Don Trip — 90's RnB
