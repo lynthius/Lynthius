@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Rakim — When I B On Tha Mic
+`recently played` &nbsp; Nas — N.Y. State of Mind
