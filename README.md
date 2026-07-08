@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Nas — N.Y. State of Mind
+`recently played` &nbsp; 2Pac — All Eyez On Me (ft. Big Syke)
