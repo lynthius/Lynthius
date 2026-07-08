@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 2Pac — All Eyez On Me (ft. Big Syke)
+`recently played` &nbsp; 2Pac — When Thugz Cry
