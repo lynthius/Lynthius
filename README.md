@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 2Pac — When Thugz Cry
+`recently played` &nbsp; 稲垣次郎とソウル・メディア — プット・イット・ホエアー・ユー・ウォント・イット
