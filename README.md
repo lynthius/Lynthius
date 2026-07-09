@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 鈴木 弘 — クロとシロ
+`recently played` &nbsp; 稲垣次郎とソウル・メディア — ドゥ・イット!
