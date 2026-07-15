@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Elsiane — Across the Stream
+`recently played` &nbsp; O.S.T.R. — Kochana Polsko
