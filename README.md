@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; O.S.T.R. — Kochana Polsko
+`recently played` &nbsp; Donguralesko — Kubrick
