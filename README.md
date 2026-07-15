@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; JID — Surround Sound (feat. 21 Savage & Baby Tate)
+`recently played` &nbsp; Elsiane — Across the Stream
