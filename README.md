@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Donguralesko — Wschód
+`recently played` &nbsp; Nas — As We Enter
