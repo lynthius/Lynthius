@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Donguralesko — Kubrick
+`recently played` &nbsp; Donguralesko — Wschód
