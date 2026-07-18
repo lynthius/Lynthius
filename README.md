@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Pink Floyd — What Do You Want from Me
+`recently played` &nbsp; Miles Davis — Flamenco Sketches (feat. John Coltrane, Cannonball Adderley & Bill Evans)
