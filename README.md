@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Bastian Benjamin — Faux Pas
+`recently played` &nbsp; Tex Beneke — A Wonderful Guy
