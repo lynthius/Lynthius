@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Zbigniew Wodecki — Panny mego dziadka
+`recently played` &nbsp; Zbigniew Wodecki — Kochałem panią kilka chwil
