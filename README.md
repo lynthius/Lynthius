@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Zbigniew Wodecki — Kochałem panią kilka chwil
+`recently played` &nbsp; Nas — The Message
