@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Modjo — Rollercoaster
+`recently played` &nbsp; Daft Punk — Digital Love
