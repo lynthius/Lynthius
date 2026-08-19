@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Billie Holiday — Crazy He Calls Me
+`recently played` &nbsp; Billie Holiday — Easy Living
