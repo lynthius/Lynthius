@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Billie Holiday — Easy Living
+`recently played` &nbsp; Roy Brown — Good Rockin Tonight
