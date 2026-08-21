@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Daft Punk — Give Life Back to Music
+`recently played` &nbsp; Daft Punk — Fragments of Time (feat. Todd Edwards)
