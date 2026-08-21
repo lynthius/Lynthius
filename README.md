@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Roy Brown — Good Rockin Tonight
+`recently played` &nbsp; Daft Punk — Give Life Back to Music
