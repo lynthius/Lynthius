@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 鈴木宏昌 — Screwdriver
+`recently played` &nbsp; 鈴木宏昌 — Straight Flash
