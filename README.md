@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 稲垣次郎とソウル・メディア — ペインテッド・パラダイス
+`recently played` &nbsp; Terumasa Hino — ハイ・タイド～マンハッタン・エクスタシー
