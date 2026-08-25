@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Roy Brown — Butcher Pete, Pt. 2
+`recently played` &nbsp; 鈴木宏昌 — Screwdriver
