@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Nas — Life's a Bitch (feat. AZ & Olu Dara)
+`recently played` &nbsp; 1986 OMEGA TRIBE — Kimi wa 1000%
