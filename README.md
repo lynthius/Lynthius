@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 1986 OMEGA TRIBE — Kimi wa 1000%
+`recently played` &nbsp; Tex Beneke — A Wonderful Guy
