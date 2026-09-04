@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Perturbator — Hard Wired (feat. Isabella Goloversic)
+`recently played` &nbsp; Perturbator — The Other Place
