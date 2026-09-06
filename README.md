@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; PRO8L3M — Interpol
+`recently played` &nbsp; Synthwave Goose — Blade Runner 2049
