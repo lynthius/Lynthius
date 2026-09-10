@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Gang Starr — You Know My Steez
+`recently played` &nbsp; Bing Crosby — Ac-Cent-Tchu-Ate The Positive
