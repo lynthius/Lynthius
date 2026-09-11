@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Depeche Mode — Enjoy the Silence
+`recently played` &nbsp; ESPRIT 空想 — Warmpop
