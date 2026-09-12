@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; The Velvet Underground — Pale Blue Eyes
+`recently played` &nbsp; Genesis — Land of Confusion - 2007 Remaster
