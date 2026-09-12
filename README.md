@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Genesis — Land of Confusion - 2007 Remaster
+`recently played` &nbsp; Katrina & The Waves — Walking On Sunshine
