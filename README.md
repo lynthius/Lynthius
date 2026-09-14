@@ -28,4 +28,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; David Bowie — Changes - 2015 Remaster
+`recently played` &nbsp; Billie Holiday — Crazy He Calls Me
