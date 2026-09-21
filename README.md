@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12210
+`commits` 12232
 
 `JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32%  
 `HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31%  
@@ -29,4 +29,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Billie Holiday — Crazy He Calls Me
+`recently played` &nbsp; 2Pac — How Do U Want It (ft. K-Ci & JoJo)
