@@ -29,4 +29,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 2Pac — How Do U Want It (ft. K-Ci & JoJo)
+`recently played` &nbsp; Louis Jordan (alto saxophone — Keep a-Knockin'
