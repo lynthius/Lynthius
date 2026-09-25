@@ -29,4 +29,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Włodi — Każdy to powie
+`recently played` &nbsp; Włodi — Krzew
