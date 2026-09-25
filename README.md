@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12251
+`commits` 12264
 
 `JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32%  
 `HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31%  
@@ -29,4 +29,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Louis Jordan (alto saxophone — Keep a-Knockin'
+`recently played` &nbsp; Włodi — Każdy to powie
