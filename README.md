@@ -29,4 +29,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; Dion — The Wanderer
+`recently played` &nbsp; nothing in history
