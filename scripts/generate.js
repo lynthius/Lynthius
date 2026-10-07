@@ -125,8 +125,6 @@ async function getActivity(weeks = 30) {
       .flatMap(w => w.contributionDays)
       .filter(d => new Date(d.date) <= new Date());
 
-    console.log('Last 14 days:', days.slice(-14).map(d => d.date.slice(5) + '=' + d.contributionCount).join(' '));
-
     let streak = 0;
     for (let i = days.length - 1; i >= 0; i--) {
       if (days[i].contributionCount > 0) streak++;
@@ -220,8 +218,14 @@ async function getSiteHealth(samples = 3) {
 function spark(values) {
   const CHARS = '▁▂▃▄▅▆▇█';
   const max = Math.max(...values, 1);
+
+  // log scale: one outlier week should not flatten every other week to ▁
   return values
-    .map(v => CHARS[Math.min(CHARS.length - 1, Math.ceil((v / max) * (CHARS.length - 1)))])
+    .map(v => {
+      if (v === 0) return CHARS[0];
+      const ratio = Math.log1p(v) / Math.log1p(max);
+      return CHARS[Math.min(CHARS.length - 1, Math.max(1, Math.round(ratio * (CHARS.length - 1))))];
+    })
     .join('');
 }
 
@@ -232,33 +236,35 @@ function pad(str, len) {
 
 function bar(pct, width = 22) {
   const filled = Math.max(1, Math.round((pct / 100) * width));
-  return '▓'.repeat(filled) + '░'.repeat(width - filled);
+  return '█'.repeat(filled) + '░'.repeat(width - filled);
 }
 
 function buildReadme({ topLangs, totalCommits, spotify, activity, site }) {
+  const LABEL = 15;
+
   const spotifyLine = spotify
     ? `${spotify.artist} — ${spotify.track}`
     : `nothing in history`;
 
-  const nameWidth = topLangs.length ? Math.max(...topLangs.map(l => l.lang.length)) : 0;
-  const langLines = topLangs.length
-    ? topLangs
-        .map(({ lang, pct }) => `\`${pad(lang, nameWidth)} ${bar(pct)} ${pct.toFixed(1).padStart(5)}%\``)
-        .join('<br>\n')
-    : '_no data_';
+  const rows = [`${pad('commits', LABEL)}${totalCommits.toLocaleString('en-US')}`, ''];
 
-  const activityBlock = activity
-    ? `
-\`last ${activity.weeks}w\` &nbsp; ${spark(activity.weekTotals)}<br>
-\`streak\` &nbsp; ${activity.streak} ${activity.streak === 1 ? 'day' : 'days'}
+  rows.push(
+    topLangs.length
+      ? topLangs
+          .map(({ lang, pct }) => `${pad(lang, LABEL)}${bar(pct)}  ${pct.toFixed(1).padStart(5)}%`)
+          .join('\n')
+      : 'no language data'
+  );
 
---
-`
-    : '';
+  if (activity) {
+    rows.push(
+      '',
+      `${pad(`last ${activity.weeks}w`, LABEL)}${spark(activity.weekTotals)}`,
+      `${pad('streak', LABEL)}${activity.streak} ${activity.streak === 1 ? 'day' : 'days'}`
+    );
+  }
 
-  const siteLine = site?.ok
-    ? `\`site\` &nbsp; [tomaszprzyborowski.com](${SITE}) — ${site.ttfb}ms`
-    : `\`site\` &nbsp; [tomaszprzyborowski.com](${SITE})`;
+  if (site?.ok) rows.push(`${pad('site', LABEL)}${site.ttfb}ms`);
 
   return `
 
@@ -270,7 +276,9 @@ Shopify apps, backend systems, retrieval and agents in production.<br>
 Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
---
+\`\`\`
+${rows.join('\n')}
+\`\`\`
 
 \`core\` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
@@ -278,17 +286,11 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-\`commits\` ${totalCommits}
-
-${langLines}
-
---
-${activityBlock}
 \`recently played\` &nbsp; ${spotifyLine}
 
 --
 
-${siteLine}
+\`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
 `;
 }
 
