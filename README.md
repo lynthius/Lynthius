@@ -9,15 +9,15 @@ Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
 ```
-commits        12,484
+commits        12,495
 
 JavaScript     ███████████░░░░░░░░░░░   49.9%
 Liquid         ████████░░░░░░░░░░░░░░   37.3%
 TypeScript     ███░░░░░░░░░░░░░░░░░░░   12.3%
 Python         █░░░░░░░░░░░░░░░░░░░░░    0.5%
 
-last 30w       ▂▁▁▅█▁▁▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▃▅▄▅▅
-streak         1 day
+last 30w       ▁▁▁▁▁▇▇▆▆▆▆▅▆▆▅▆▆▆▆▇▅▆▄▅▆▇▆█▆█
+streak         3 days
 ```
 
 `core` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
@@ -26,7 +26,7 @@ streak         1 day
 
 --
 
-`recently played` &nbsp; 2Pac — Thugz Mansion - 7 Remix
+`recently played` &nbsp; 2Pac — Letter 2 My Unborn
 
 --
 
