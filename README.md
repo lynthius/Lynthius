@@ -18,7 +18,6 @@ Python         █░░░░░░░░░░░░░░░░░░░░�
 
 last 30w       ▂▁▁▅█▁▁▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▃▅▄▅▅
 streak         1 day
-site           70ms
 ```
 
 `core` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
@@ -27,7 +26,7 @@ site           70ms
 
 --
 
-`recently played` &nbsp; 2Pac — I Get Around
+`recently played` &nbsp; 2Pac — Thugz Mansion - 7 Remix
 
 --
 
