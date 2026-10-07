@@ -82,7 +82,7 @@ async function getLanguageStats() {
   return counted
     .sort(([, a], [, b]) => b - a)
     .slice(0, 8)
-    .map(([lang, bytes]) => ({ lang, pct: Math.ceil((bytes / total) * 100) }));
+    .map(([lang, bytes]) => ({ lang, pct: (bytes / total) * 100 }));
 }
 
 async function ghGraphQL(query, variables = {}) {
@@ -229,7 +229,7 @@ function pad(str, len) {
 }
 
 function bar(pct, width = 22) {
-  const filled = Math.max(1, Math.ceil((pct / 100) * width));
+  const filled = Math.max(1, Math.round((pct / 100) * width));
   return '▓'.repeat(filled) + '░'.repeat(width - filled);
 }
 
@@ -241,7 +241,7 @@ function buildReadme({ topLangs, totalCommits, spotify, activity, site }) {
   const nameWidth = topLangs.length ? Math.max(...topLangs.map(l => l.lang.length)) : 0;
   const langLines = topLangs.length
     ? topLangs
-        .map(({ lang, pct }) => `\`${pad(lang, nameWidth)} ${bar(pct)} ${String(pct).padStart(3)}%\``)
+        .map(({ lang, pct }) => `\`${pad(lang, nameWidth)} ${bar(pct)} ${pct.toFixed(1).padStart(5)}%\``)
         .join('<br>\n')
     : '_no data_';
 
