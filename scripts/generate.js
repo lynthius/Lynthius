@@ -13,6 +13,8 @@ const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const WAKATIME_API_KEY      = process.env.WAKATIME_API_KEY;
 
+const SITE = 'https://tomaszprzyborowski.com';
+
 // ─── GitHub ───────────────────────────────────────────────────────────────────
 
 async function ghFetch(endpoint, accept = 'application/vnd.github+json') {
@@ -83,6 +85,60 @@ async function getLanguageStats() {
     .map(([lang, bytes]) => ({ lang, pct: Math.ceil((bytes / total) * 100) }));
 }
 
+async function ghGraphQL(query, variables = {}) {
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${GH_TOKEN}`,
+      'Content-Type': 'application/json',
+      'User-Agent': 'readme-gen',
+    },
+    body: JSON.stringify({ query, variables }),
+  });
+  return res.json();
+}
+
+async function getActivity(weeks = 30) {
+  const query = `
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            weeks { contributionDays { contributionCount date } }
+          }
+        }
+      }
+    }
+  `;
+
+  try {
+    const data = await ghGraphQL(query, { login: USERNAME });
+    const cal = data?.data?.user?.contributionsCollection?.contributionCalendar;
+    if (!cal?.weeks?.length) return null;
+
+    const weekTotals = cal.weeks
+      .slice(-weeks)
+      .map(w => w.contributionDays.reduce((sum, d) => sum + d.contributionCount, 0));
+
+    // streak counts back from today; an empty today has not broken it yet
+    const days = cal.weeks
+      .flatMap(w => w.contributionDays)
+      .filter(d => new Date(d.date) <= new Date());
+
+    let streak = 0;
+    for (let i = days.length - 1; i >= 0; i--) {
+      if (days[i].contributionCount > 0) streak++;
+      else if (i === days.length - 1) continue;
+      else break;
+    }
+
+    return { weekTotals, streak, weeks: weekTotals.length };
+  } catch (err) {
+    console.warn('Activity fetch failed:', err.message);
+    return null;
+  }
+}
+
 // ─── Spotify ──────────────────────────────────────────────────────────────────
 
 async function spotifyToken() {
@@ -130,7 +186,42 @@ async function getSpotify() {
   return null;
 }
 
+// ─── Site ────────────────────────────────────────────────────────────────────
+
+async function getSiteHealth(samples = 3) {
+  const timings = [];
+  let status = 0;
+
+  for (let i = 0; i < samples; i++) {
+    try {
+      const t0 = Date.now();
+      const res = await fetch(SITE, { redirect: 'follow' });
+      timings.push(Date.now() - t0);
+      status = res.status;
+      await res.arrayBuffer();
+    } catch (err) {
+      console.warn('Site check failed:', err.message);
+    }
+  }
+
+  if (!timings.length) return null;
+
+  timings.sort((a, b) => a - b);
+  const median = timings[Math.floor(timings.length / 2)];
+
+  // bucketed to 10ms so run-to-run jitter does not churn the README
+  return { ok: status >= 200 && status < 400, status, ttfb: Math.round(median / 10) * 10 };
+}
+
 // ─── README builder ───────────────────────────────────────────────────────────
+
+function spark(values) {
+  const CHARS = '▁▂▃▄▅▆▇█';
+  const max = Math.max(...values, 1);
+  return values
+    .map(v => CHARS[Math.min(CHARS.length - 1, Math.ceil((v / max) * (CHARS.length - 1)))])
+    .join('');
+}
 
 function pad(str, len) {
   const s = String(str);
@@ -142,7 +233,7 @@ function bar(pct, width = 22) {
   return '▓'.repeat(filled) + '░'.repeat(width - filled);
 }
 
-function buildReadme({ topLangs, totalCommits, spotify }) {
+function buildReadme({ topLangs, totalCommits, spotify, activity, site }) {
   const spotifyLine = spotify
     ? `${spotify.artist} — ${spotify.track}`
     : `nothing in history`;
@@ -153,6 +244,19 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
         .map(({ lang, pct }) => `\`${pad(lang, nameWidth)} ${bar(pct)} ${String(pct).padStart(3)}%\``)
         .join('<br>\n')
     : '_no data_';
+
+  const activityBlock = activity
+    ? `
+\`last ${activity.weeks}w\` &nbsp; ${spark(activity.weekTotals)}<br>
+\`streak\` &nbsp; ${activity.streak} ${activity.streak === 1 ? 'day' : 'days'}
+
+--
+`
+    : '';
+
+  const siteLine = site?.ok
+    ? `\`site\` &nbsp; [tomaszprzyborowski.com](${SITE}) — ${site.ttfb}ms`
+    : `\`site\` &nbsp; [tomaszprzyborowski.com](${SITE})`;
 
   return `
 
@@ -177,29 +281,35 @@ Interested? Ping. Connect. Deploy.<br>
 ${langLines}
 
 --
-
+${activityBlock}
 \`recently played\` &nbsp; ${spotifyLine}
 
 --
 
-\`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
+${siteLine}
 `;
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  console.log('Fetching WakaTime language stats...');
+  console.log('Fetching language stats...');
   const topLangs = await getLanguageStats();
 
   console.log('Fetching commit count...');
   const totalCommits = await getTotalCommits();
 
+  console.log('Fetching contribution activity...');
+  const activity = await getActivity();
+
   console.log('Fetching Spotify...');
   const spotify = await getSpotify();
 
+  console.log('Checking site...');
+  const site = await getSiteHealth();
+
   console.log('Building README...');
-  const readme  = buildReadme({ topLangs, totalCommits, spotify });
+  const readme  = buildReadme({ topLangs, totalCommits, spotify, activity, site });
   const outPath = path.join(__dirname, '..', 'README.md');
   fs.writeFileSync(outPath, readme, 'utf-8');
   console.log(`Done → ${outPath}`);
