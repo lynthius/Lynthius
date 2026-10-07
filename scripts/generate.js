@@ -13,8 +13,6 @@ const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const WAKATIME_API_KEY      = process.env.WAKATIME_API_KEY;
 
-const SITE = 'https://tomaszprzyborowski.com';
-
 // ─── GitHub ───────────────────────────────────────────────────────────────────
 
 async function ghFetch(endpoint, accept = 'application/vnd.github+json') {
@@ -186,33 +184,6 @@ async function getSpotify() {
   return null;
 }
 
-// ─── Site ────────────────────────────────────────────────────────────────────
-
-async function getSiteHealth(samples = 3) {
-  const timings = [];
-  let status = 0;
-
-  for (let i = 0; i < samples; i++) {
-    try {
-      const t0 = Date.now();
-      const res = await fetch(SITE, { redirect: 'follow' });
-      timings.push(Date.now() - t0);
-      status = res.status;
-      await res.arrayBuffer();
-    } catch (err) {
-      console.warn('Site check failed:', err.message);
-    }
-  }
-
-  if (!timings.length) return null;
-
-  timings.sort((a, b) => a - b);
-  const median = timings[Math.floor(timings.length / 2)];
-
-  // bucketed to 10ms so run-to-run jitter does not churn the README
-  return { ok: status >= 200 && status < 400, status, ttfb: Math.round(median / 10) * 10 };
-}
-
 // ─── README builder ───────────────────────────────────────────────────────────
 
 function spark(values) {
@@ -239,7 +210,7 @@ function bar(pct, width = 22) {
   return '█'.repeat(filled) + '░'.repeat(width - filled);
 }
 
-function buildReadme({ topLangs, totalCommits, spotify, activity, site }) {
+function buildReadme({ topLangs, totalCommits, spotify, activity }) {
   const LABEL = 15;
 
   const spotifyLine = spotify
@@ -263,8 +234,6 @@ function buildReadme({ topLangs, totalCommits, spotify, activity, site }) {
       `${pad('streak', LABEL)}${activity.streak} ${activity.streak === 1 ? 'day' : 'days'}`
     );
   }
-
-  if (site?.ok) rows.push(`${pad('site', LABEL)}${site.ttfb}ms`);
 
   return `
 
@@ -309,11 +278,8 @@ async function main() {
   console.log('Fetching Spotify...');
   const spotify = await getSpotify();
 
-  console.log('Checking site...');
-  const site = await getSiteHealth();
-
   console.log('Building README...');
-  const readme  = buildReadme({ topLangs, totalCommits, spotify, activity, site });
+  const readme  = buildReadme({ topLangs, totalCommits, spotify, activity });
   const outPath = path.join(__dirname, '..', 'README.md');
   fs.writeFileSync(outPath, readme, 'utf-8');
   console.log(`Done → ${outPath}`);
