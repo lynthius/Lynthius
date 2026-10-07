@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12480
+`commits` 12481
 
 `JavaScript ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░  50%`<br>
 `Liquid     ▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░  38%`<br>
@@ -25,8 +25,13 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 2Pac — How Do U Want It (ft. K-Ci & JoJo)
+`last 30w` &nbsp; ▂▁▁▂█▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▃▂▃▂<br>
+`streak` &nbsp; 1 day
 
 --
 
-`more` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
+`recently played` &nbsp; 2Pac — Hail Mary
+
+--
+
+`site` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com) — 50ms
