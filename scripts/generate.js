@@ -144,7 +144,7 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
     : `nothing in history`;
 
   const langLines = topLangs.length
-    ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join(' \n')
+    ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join('<br>\n')
     : '_no data_';
 
   return `
