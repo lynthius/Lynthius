@@ -83,54 +83,61 @@ async function getLanguageStats() {
     .map(([lang, bytes]) => ({ lang, pct: (bytes / total) * 100 }));
 }
 
-async function ghGraphQL(query, variables = {}) {
-  const res = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${GH_TOKEN}`,
-      'Content-Type': 'application/json',
-      'User-Agent': 'readme-gen',
-    },
-    body: JSON.stringify({ query, variables }),
-  });
-  return res.json();
-}
-
+// Commit search sees private repos the token can reach, which is why the commit
+// counter above is accurate. contributionsCollection does not, so activity is
+// derived from the same endpoint instead.
 async function getActivity(weeks = 30) {
-  const query = `
-    query($login: String!) {
-      user(login: $login) {
-        contributionsCollection {
-          contributionCalendar {
-            weeks { contributionDays { contributionCount date } }
-          }
-        }
-      }
-    }
-  `;
+  const DAY = 86400000;
+  const iso = ms => new Date(ms).toISOString().slice(0, 10);
+
+  const today = new Date();
+  today.setUTCHours(0, 0, 0, 0);
+  const start = today.getTime() - (weeks * 7 - 1) * DAY;
 
   try {
-    const data = await ghGraphQL(query, { login: USERNAME });
-    const cal = data?.data?.user?.contributionsCollection?.contributionCalendar;
-    if (!cal?.weeks?.length) return null;
+    const perDay = {};
+    let fetched = 0;
 
-    const weekTotals = cal.weeks
-      .slice(-weeks)
-      .map(w => w.contributionDays.reduce((sum, d) => sum + d.contributionCount, 0));
+    // search caps out at 1000 results; newest first, so recent weeks stay exact
+    for (let page = 1; page <= 10; page++) {
+      const q = `author:${USERNAME} committer-date:>=${iso(start)}`;
+      const data = await ghFetch(
+        `/search/commits?q=${encodeURIComponent(q)}&sort=committer-date&order=desc&per_page=100&page=${page}`,
+        'application/vnd.github.cloak-preview+json'
+      );
 
-    // streak counts back from today; an empty today has not broken it yet
-    const days = cal.weeks
-      .flatMap(w => w.contributionDays)
-      .filter(d => new Date(d.date) <= new Date());
+      const items = data?.items;
+      if (!Array.isArray(items)) {
+        console.warn('Commit search stopped:', data?.message || 'unexpected response');
+        break;
+      }
+      if (!items.length) break;
 
-    let streak = 0;
-    for (let i = days.length - 1; i >= 0; i--) {
-      if (days[i].contributionCount > 0) streak++;
-      else if (i === days.length - 1) continue;
-      else break;
+      for (const it of items) {
+        const d = it?.commit?.committer?.date || it?.commit?.author?.date;
+        if (d) perDay[d.slice(0, 10)] = (perDay[d.slice(0, 10)] || 0) + 1;
+      }
+      fetched += items.length;
+      if (items.length < 100) break;
     }
 
-    return { weekTotals, streak, weeks: weekTotals.length };
+    if (!fetched) return null;
+
+    const weekTotals = Array.from({ length: weeks }, (_, w) => {
+      let sum = 0;
+      for (let d = 0; d < 7; d++) sum += perDay[iso(start + (w * 7 + d) * DAY)] || 0;
+      return sum;
+    });
+
+    // counts back from today; an empty today has not broken the streak yet
+    let streak = 0;
+    for (let d = 0; d < weeks * 7; d++) {
+      if (perDay[iso(today.getTime() - d * DAY)]) streak++;
+      else if (d > 0) break;
+    }
+
+    console.log(`Activity: ${fetched} commits, streak ${streak}d, last week ${weekTotals[weeks - 1]}`);
+    return { weekTotals, streak, weeks };
   } catch (err) {
     console.warn('Activity fetch failed:', err.message);
     return null;
