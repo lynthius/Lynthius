@@ -72,11 +72,15 @@ async function getLanguageStats() {
     })
   );
 
-  const total = Object.values(langTotals).reduce((a, b) => a + b, 0);
-  return Object.entries(langTotals)
+  // markup / stylesheets are noise in a language breakdown
+  const EXCLUDED = new Set(['HTML', 'CSS', 'SCSS', 'Sass', 'Less', 'Stylus']);
+  const counted = Object.entries(langTotals).filter(([lang]) => !EXCLUDED.has(lang));
+
+  const total = counted.reduce((sum, [, bytes]) => sum + bytes, 0);
+  return counted
     .sort(([, a], [, b]) => b - a)
     .slice(0, 8)
-    .map(([lang, bytes]) => ({ lang, pct: Math.round((bytes / total) * 100) }));
+    .map(([lang, bytes]) => ({ lang, pct: Math.ceil((bytes / total) * 100) }));
 }
 
 // ─── Spotify ──────────────────────────────────────────────────────────────────
@@ -134,7 +138,7 @@ function pad(str, len) {
 }
 
 function bar(pct, width = 22) {
-  const filled = Math.round((pct / 100) * width);
+  const filled = Math.max(1, Math.ceil((pct / 100) * width));
   return '▓'.repeat(filled) + '░'.repeat(width - filled);
 }
 
@@ -143,8 +147,11 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
     ? `${spotify.artist} — ${spotify.track}`
     : `nothing in history`;
 
+  const nameWidth = topLangs.length ? Math.max(...topLangs.map(l => l.lang.length)) : 0;
   const langLines = topLangs.length
-    ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join('<br>\n')
+    ? topLangs
+        .map(({ lang, pct }) => `\`${pad(lang, nameWidth)} ${bar(pct)} ${String(pct).padStart(3)}%\``)
+        .join('<br>\n')
     : '_no data_';
 
   return `
