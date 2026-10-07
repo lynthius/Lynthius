@@ -201,9 +201,8 @@ function buildReadme({ topLangs, totalCommits, activity }) {
   return `
 
 **Tomasz** \`/ˈtɔ.maʂ/\`<br>
-Shopify Engineer · AI Engineer<br>
-
 AI Systems for Commerce.<br>
+
 Shopify apps, backend systems, retrieval and agents in production.<br>
 Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
