@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 // scripts/generate.js
-// Fetches GitHub + Spotify data and writes README.md to the repo root.
+// Fetches GitHub activity data and writes README.md to the repo root.
 
 const fs   = require('fs');
 const path = require('path');
 
 const USERNAME              = 'lynthius';
 const GH_TOKEN              = process.env.GH_TOKEN;
-const SPOTIFY_CLIENT_ID     = process.env.SPOTIFY_CLIENT_ID;
-const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
-const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const WAKATIME_API_KEY      = process.env.WAKATIME_API_KEY;
 
@@ -86,7 +83,7 @@ async function getLanguageStats() {
 // Commit search sees private repos the token can reach, which is why the commit
 // counter above is accurate. contributionsCollection does not, so activity is
 // derived from the same endpoint instead.
-async function getActivity(weeks = 30) {
+async function getActivity(weeks = 12) {
   const DAY = 86400000;
   const iso = ms => new Date(ms).toISOString().slice(0, 10);
 
@@ -154,53 +151,6 @@ async function getActivity(weeks = 30) {
   }
 }
 
-// ─── Spotify ──────────────────────────────────────────────────────────────────
-
-async function spotifyToken() {
-  const creds = Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString('base64');
-  const res   = await fetch('https://accounts.spotify.com/api/token', {
-    method: 'POST',
-    headers: {
-      Authorization: `Basic ${creds}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: `grant_type=refresh_token&refresh_token=${SPOTIFY_REFRESH_TOKEN}`,
-  });
-  const data = await res.json();
-  return data.access_token;
-}
-
-async function getSpotify() {
-  if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET || !SPOTIFY_REFRESH_TOKEN) {
-    return null;
-  }
-  try {
-    const token = await spotifyToken();
-
-    const nowRes = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    if (nowRes.status === 200) {
-      const data = await nowRes.json();
-      if (data?.item) {
-        return { track: data.item.name, artist: data.item.artists[0].name, playing: data.is_playing };
-      }
-    }
-
-    const recentRes = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=1', {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    if (recentRes.ok) {
-      const data  = await recentRes.json();
-      const track = data.items?.[0]?.track;
-      if (track) return { track: track.name, artist: track.artists[0].name, playing: false };
-    }
-  } catch (err) {
-    console.warn('Spotify fetch failed:', err.message);
-  }
-  return null;
-}
-
 // ─── README builder ───────────────────────────────────────────────────────────
 
 function spark(values) {
@@ -227,12 +177,8 @@ function bar(pct, width = 22) {
   return '█'.repeat(filled) + '░'.repeat(width - filled);
 }
 
-function buildReadme({ topLangs, totalCommits, spotify, activity }) {
+function buildReadme({ topLangs, totalCommits, activity }) {
   const LABEL = 15;
-
-  const spotifyLine = spotify
-    ? `${spotify.artist} — ${spotify.track}`
-    : `nothing in history`;
 
   const rows = [`${pad('commits', LABEL)}${totalCommits.toLocaleString('en-US')}`, ''];
 
@@ -272,10 +218,6 @@ ${rows.join('\n')}
 
 --
 
-\`recently played\` &nbsp; ${spotifyLine}
-
---
-
 \`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
 `;
 }
@@ -292,11 +234,8 @@ async function main() {
   console.log('Fetching contribution activity...');
   const activity = await getActivity();
 
-  console.log('Fetching Spotify...');
-  const spotify = await getSpotify();
-
   console.log('Building README...');
-  const readme  = buildReadme({ topLangs, totalCommits, spotify, activity });
+  const readme  = buildReadme({ topLangs, totalCommits, activity });
   const outPath = path.join(__dirname, '..', 'README.md');
   fs.writeFileSync(outPath, readme, 'utf-8');
   console.log(`Done → ${outPath}`);
