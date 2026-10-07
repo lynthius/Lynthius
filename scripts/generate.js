@@ -125,6 +125,8 @@ async function getActivity(weeks = 30) {
       .flatMap(w => w.contributionDays)
       .filter(d => new Date(d.date) <= new Date());
 
+    console.log('Last 14 days:', days.slice(-14).map(d => d.date.slice(5) + '=' + d.contributionCount).join(' '));
+
     let streak = 0;
     for (let i = days.length - 1; i >= 0; i--) {
       if (days[i].contributionCount > 0) streak++;
