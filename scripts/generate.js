@@ -214,9 +214,7 @@ ${rows.join('\n')}
 
 \`core\` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
-\`advanced\` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
-
---
+\`going deeper\` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
 
 \`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
 `;
