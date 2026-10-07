@@ -9,14 +9,14 @@ Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
 ```
-commits        12,495
+commits        12,497
 
 JavaScript     ███████████░░░░░░░░░░░   49.9%
 Liquid         ████████░░░░░░░░░░░░░░   37.3%
 TypeScript     ███░░░░░░░░░░░░░░░░░░░   12.3%
 Python         █░░░░░░░░░░░░░░░░░░░░░    0.5%
 
-last 30w       ▁▁▁▁▁▇▇▆▆▆▆▅▆▆▅▆▆▆▆▇▅▆▄▅▆▇▆█▆█
+last 24w       ▇▆▆▆▆▅▆▆▅▆▆▆▆▇▅▆▄▅▆▇▆█▆█
 streak         3 days
 ```
 
