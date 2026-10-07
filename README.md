@@ -1,32 +1,36 @@
 
 
 **Tomasz** `/ˈtɔ.maʂ/`<br>
-Fullstack Shopify Engineer · Frontend Developer<br>
+Shopify Engineer · AI Engineer<br>
 
-I build Shopify stores that are engineered, not assembled.<br>
-Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.<br>
-If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out.<br>
+AI Systems for Commerce.<br>
+Shopify apps, backend systems, retrieval and agents in production.<br>
+Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`core` &nbsp; shopify · liquid · javascript · graphql · node · vite · gulp · gcp · webflow · hexo
+`core` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
-`learning` &nbsp; typescript · react · python · vercel
+`advanced` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
 
 --
 
-`commits` 12437
+`commits` 12472
 
-`JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32%  
-`HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31%  
-`Liquid` ▓▓▓▓▓░░░░░░░░░░░░░░░░░ 24%  
-`TypeScript` ▓▓░░░░░░░░░░░░░░░░░░░░ 8%  
-`CSS` ▓░░░░░░░░░░░░░░░░░░░░░ 4%  
-`SCSS` ░░░░░░░░░░░░░░░░░░░░░░ 1%  
-`Python` ░░░░░░░░░░░░░░░░░░░░░░ 0%  
+`JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32% 
+`HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31% 
+`Liquid` ▓▓▓▓▓░░░░░░░░░░░░░░░░░ 24% 
+`TypeScript` ▓▓░░░░░░░░░░░░░░░░░░░░ 8% 
+`CSS` ▓░░░░░░░░░░░░░░░░░░░░░ 4% 
+`SCSS` ░░░░░░░░░░░░░░░░░░░░░░ 1% 
+`Python` ░░░░░░░░░░░░░░░░░░░░░░ 0% 
 `Stylus` ░░░░░░░░░░░░░░░░░░░░░░ 0%
 
 --
 
-`recently played` &nbsp; Mainhso — Crystallized
+`recently played` &nbsp; 2Pac — Ambitionz Az A Ridah
+
+--
+
+`more` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
