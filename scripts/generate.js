@@ -144,24 +144,24 @@ function buildReadme({ topLangs, totalCommits, spotify }) {
     : `nothing in history`;
 
   const langLines = topLangs.length
-    ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join('  \n')
+    ? topLangs.map(({ lang, pct }) => `\`${lang}\` ${bar(pct)} ${pct}%`).join(' \n')
     : '_no data_';
 
   return `
 
 **Tomasz** \`/ˈtɔ.maʂ/\`<br>
-Fullstack Shopify Engineer · Frontend Developer<br>
+Shopify Engineer · AI Engineer<br>
 
-I build Shopify stores that are engineered, not assembled.<br>
-Aesthetic and fast e-commerce experiences. Clean code. Smart structure. No unnecessary apps.<br>
-If it needs to be fast, it's fast. If it needs to scale, it scales. If it's weird — we figure it out.<br>
+AI Systems for Commerce.<br>
+Shopify apps, backend systems, retrieval and agents in production.<br>
+Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
 --
 
-\`core\` &nbsp; shopify · liquid · javascript · graphql · node · vite · gulp · gcp · webflow · hexo
+\`core\` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
-\`learning\` &nbsp; typescript · react · python · vercel
+\`advanced\` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
 
 --
 
@@ -172,6 +172,10 @@ ${langLines}
 --
 
 \`recently played\` &nbsp; ${spotifyLine}
+
+--
+
+\`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
 `;
 }
 
