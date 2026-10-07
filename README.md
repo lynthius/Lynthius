@@ -16,20 +16,20 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12472
+`commits` 12479
 
-`JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32% 
-`HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31% 
-`Liquid` ▓▓▓▓▓░░░░░░░░░░░░░░░░░ 24% 
-`TypeScript` ▓▓░░░░░░░░░░░░░░░░░░░░ 8% 
-`CSS` ▓░░░░░░░░░░░░░░░░░░░░░ 4% 
-`SCSS` ░░░░░░░░░░░░░░░░░░░░░░ 1% 
-`Python` ░░░░░░░░░░░░░░░░░░░░░░ 0% 
+`JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32%<br>
+`HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31%<br>
+`Liquid` ▓▓▓▓▓░░░░░░░░░░░░░░░░░ 24%<br>
+`TypeScript` ▓▓░░░░░░░░░░░░░░░░░░░░ 8%<br>
+`CSS` ▓░░░░░░░░░░░░░░░░░░░░░ 4%<br>
+`SCSS` ░░░░░░░░░░░░░░░░░░░░░░ 1%<br>
+`Python` ░░░░░░░░░░░░░░░░░░░░░░ 0%<br>
 `Stylus` ░░░░░░░░░░░░░░░░░░░░░░ 0%
 
 --
 
-`recently played` &nbsp; 2Pac — Ambitionz Az A Ridah
+`recently played` &nbsp; 2Pac — Changes
 
 --
 
