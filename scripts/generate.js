@@ -123,9 +123,19 @@ async function getActivity(weeks = 30) {
 
     if (!fetched) return null;
 
-    const weekTotals = Array.from({ length: weeks }, (_, w) => {
+    // search truncates at 1000 results, so only render weeks that came back whole
+    const dates = Object.keys(perDay).sort();
+    let span = weeks;
+    if (fetched >= 1000) {
+      const safeFrom = Date.parse(`${dates[0]}T00:00:00Z`) + DAY;
+      const fullDays = Math.floor((today.getTime() - safeFrom) / DAY) + 1;
+      span = Math.max(1, Math.min(weeks, Math.floor(fullDays / 7)));
+    }
+    const from = today.getTime() - (span * 7 - 1) * DAY;
+
+    const weekTotals = Array.from({ length: span }, (_, w) => {
       let sum = 0;
-      for (let d = 0; d < 7; d++) sum += perDay[iso(start + (w * 7 + d) * DAY)] || 0;
+      for (let d = 0; d < 7; d++) sum += perDay[iso(from + (w * 7 + d) * DAY)] || 0;
       return sum;
     });
 
@@ -136,8 +146,8 @@ async function getActivity(weeks = 30) {
       else if (d > 0) break;
     }
 
-    console.log(`Activity: ${fetched} commits, streak ${streak}d, last week ${weekTotals[weeks - 1]}`);
-    return { weekTotals, streak, weeks };
+    console.log(`Activity: ${fetched} commits over ${span}w, streak ${streak}d`);
+    return { weekTotals, streak, weeks: span };
   } catch (err) {
     console.warn('Activity fetch failed:', err.message);
     return null;
