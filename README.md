@@ -8,7 +8,18 @@ Shopify apps, backend systems, retrieval and agents in production.<br>
 Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
---
+```
+commits        12,484
+
+JavaScript     ███████████░░░░░░░░░░░   49.9%
+Liquid         ████████░░░░░░░░░░░░░░   37.3%
+TypeScript     ███░░░░░░░░░░░░░░░░░░░   12.3%
+Python         █░░░░░░░░░░░░░░░░░░░░░    0.5%
+
+last 30w       ▂▁▁▅█▁▁▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▃▅▄▅▅
+streak         1 day
+site           70ms
+```
 
 `core` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
@@ -16,22 +27,8 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12483
-
-`JavaScript ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░  49.9%`<br>
-`Liquid     ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░  37.3%`<br>
-`TypeScript ▓▓▓░░░░░░░░░░░░░░░░░░░  12.3%`<br>
-`Python     ▓░░░░░░░░░░░░░░░░░░░░░   0.5%`
+`recently played` &nbsp; 2Pac — I Get Around
 
 --
 
-`last 30w` &nbsp; ▂▁▁▂█▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▃▂▃▂<br>
-`streak` &nbsp; 1 day
-
---
-
-`recently played` &nbsp; 2Pac — Lil' Homies
-
---
-
-`site` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com) — 50ms
+`more` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
