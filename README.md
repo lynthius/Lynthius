@@ -9,24 +9,20 @@ Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
 ```
-commits        12,497
+commits        12,498
 
 JavaScript     ███████████░░░░░░░░░░░   49.9%
 Liquid         ████████░░░░░░░░░░░░░░   37.3%
 TypeScript     ███░░░░░░░░░░░░░░░░░░░   12.3%
 Python         █░░░░░░░░░░░░░░░░░░░░░    0.5%
 
-last 24w       ▇▆▆▆▆▅▆▆▅▆▆▆▆▇▅▆▄▅▆▇▆█▆█
+last 12w       ▆▇▅▆▄▅▆▇▆█▆█
 streak         3 days
 ```
 
 `core` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
 `advanced` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
-
---
-
-`recently played` &nbsp; 2Pac — Letter 2 My Unborn
 
 --
 
