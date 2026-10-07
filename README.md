@@ -16,20 +16,16 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12479
+`commits` 12480
 
-`JavaScript` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 32%<br>
-`HTML` ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░ 31%<br>
-`Liquid` ▓▓▓▓▓░░░░░░░░░░░░░░░░░ 24%<br>
-`TypeScript` ▓▓░░░░░░░░░░░░░░░░░░░░ 8%<br>
-`CSS` ▓░░░░░░░░░░░░░░░░░░░░░ 4%<br>
-`SCSS` ░░░░░░░░░░░░░░░░░░░░░░ 1%<br>
-`Python` ░░░░░░░░░░░░░░░░░░░░░░ 0%<br>
-`Stylus` ░░░░░░░░░░░░░░░░░░░░░░ 0%
+`JavaScript ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░  50%`<br>
+`Liquid     ▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░  38%`<br>
+`TypeScript ▓▓▓░░░░░░░░░░░░░░░░░░░  13%`<br>
+`Python     ▓░░░░░░░░░░░░░░░░░░░░░   1%`
 
 --
 
-`recently played` &nbsp; 2Pac — Changes
+`recently played` &nbsp; 2Pac — How Do U Want It (ft. K-Ci & JoJo)
 
 --
 
