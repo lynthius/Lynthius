@@ -18,10 +18,10 @@ Interested? Ping. Connect. Deploy.<br>
 
 `commits` 12481
 
-`JavaScript ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░  50%`<br>
-`Liquid     ▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░  38%`<br>
-`TypeScript ▓▓▓░░░░░░░░░░░░░░░░░░░  13%`<br>
-`Python     ▓░░░░░░░░░░░░░░░░░░░░░   1%`
+`JavaScript ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░  49.9%`<br>
+`Liquid     ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░  37.3%`<br>
+`TypeScript ▓▓▓░░░░░░░░░░░░░░░░░░░  12.3%`<br>
+`Python     ▓░░░░░░░░░░░░░░░░░░░░░   0.5%`
 
 --
 
@@ -34,4 +34,4 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`site` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com) — 50ms
+`site` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com) — 60ms
