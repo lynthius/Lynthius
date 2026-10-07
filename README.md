@@ -16,7 +16,7 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`commits` 12481
+`commits` 12483
 
 `JavaScript ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░  49.9%`<br>
 `Liquid     ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░  37.3%`<br>
@@ -30,8 +30,8 @@ Interested? Ping. Connect. Deploy.<br>
 
 --
 
-`recently played` &nbsp; 2Pac — Hail Mary
+`recently played` &nbsp; 2Pac — Lil' Homies
 
 --
 
-`site` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com) — 60ms
+`site` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com) — 50ms
