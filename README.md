@@ -9,7 +9,7 @@ Currently building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
 
 ```
-commits        12,498
+commits        12,499
 
 JavaScript     ███████████░░░░░░░░░░░   49.9%
 Liquid         ████████░░░░░░░░░░░░░░   37.3%
@@ -22,8 +22,6 @@ streak         3 days
 
 `core` &nbsp; shopify · liquid · javascript · preact/react · node · graphql · webhooks · llm apis · mcp · gcp · cloud run · docker · polaris
 
-`advanced` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
-
---
+`going deeper` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
 
 `more` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
