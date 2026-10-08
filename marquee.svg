@@ -20,7 +20,7 @@
 <g id="track"><use xlink:href="#g0" x="0"/><use xlink:href="#g1" x="157"/><use xlink:href="#g2" x="305"/><use xlink:href="#g3" x="462"/><use xlink:href="#g4" x="619"/><use xlink:href="#g5" x="812"/><use xlink:href="#g6" x="969"/><use xlink:href="#g7" x="1126"/><use xlink:href="#g8" x="1283"/><use xlink:href="#g9" x="1428"/><use xlink:href="#g10" x="1585"/><use xlink:href="#g11" x="1742"/><use xlink:href="#g12" x="1899"/><use xlink:href="#g13" x="2056"/><use xlink:href="#g14" x="2213"/><use xlink:href="#g15" x="2370"/><use xlink:href="#g16" x="2527"/></g>
 </defs>
 <g>
-<animateTransform attributeName="transform" type="translate" from="0 0" to="-2684 0" dur="56s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" from="0 0" to="-2684 0" dur="52s" repeatCount="indefinite"/>
 <use xlink:href="#track"/>
 <use xlink:href="#track" x="2684"/>
 </g>
