@@ -192,7 +192,10 @@ Interested? Ping. Connect. Deploy.<br>
 
 \`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
 
+<picture>
+<source media="(max-width: 600px)" srcset="./marquee-mobile.svg">
 <img src="./marquee.svg" width="100%" alt="">
+</picture>
 `;
 }
 
