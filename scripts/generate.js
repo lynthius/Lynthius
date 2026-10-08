@@ -182,7 +182,6 @@ function buildReadme() {
 
 **Tomasz** \`/ˈtɔ.maʂ/\`<br>
 AI Systems for Commerce.<br>
-<img src="./marquee.svg" width="100%" alt="">
 
 Shopify apps, backend systems, retrieval and agents in production. Building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
@@ -192,6 +191,8 @@ Interested? Ping. Connect. Deploy.<br>
 \`going deeper\` &nbsp; python (fastapi) · postgres + pgvector · retrieval (bm25 · embeddings · hybrid) · evals & ranking metrics
 
 \`more\` &nbsp; [tomaszprzyborowski.com](https://tomaszprzyborowski.com)
+
+<img src="./marquee.svg" width="100%" alt="">
 `;
 }
 
