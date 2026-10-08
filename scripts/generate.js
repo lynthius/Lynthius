@@ -202,6 +202,7 @@ function buildReadme({ topLangs, totalCommits, activity }) {
 
 **Tomasz** \`/ˈtɔ.maʂ/\`<br>
 AI Systems for Commerce.<br>
+<img src="https://media.giphy.com/media/mXeOgQvTWweG1hODif/200w.gif" width="120" alt="typing on a vintage computer"><br>
 
 Shopify apps, backend systems, retrieval and agents in production.<br>
 Currently building tools around e-commerce search and catalog data.<br>
