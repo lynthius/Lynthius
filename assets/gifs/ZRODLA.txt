@@ -1,0 +1,26 @@
+Źródła / licencje — ewolucja v7 (23 kafle, wyłącznie prawdziwe nagrania, 320 px, 10 fps, ~4–4,5 s, każdy < 900 KB)
+!! = YouTube / objęte prawem autorskim (wersja „ikoniczna” zaakceptowana przez Tomasza). NOWE = nowe/zmienione w v6.
+NAZWY PLIKÓW: każdy GIF zaczyna się od numeru kolejności z zerem wiodącym (01_jacquard_1804.gif … 23_agents_2026.gif), tak samo w zipie i w folderze v7/gify — kolejność wstawienia jest widoczna od razu. NOWE = zmienione w v7.
+01 1804 jacquard      https://commons.wikimedia.org/wiki/File:Jacquard_weefgetouw_in_actie.webm  CC BY-SA 4.0, Remko de Keijzer — 4,5 s
+02 1840 babbage   https://commons.wikimedia.org/wiki/File:Difference_Engine.webm  CC BY 3.0, Wolff Dobson (Difference Engine No.2, Computer History Museum; szeroki kadr całej maszyny, operator kręci korbą) — 4,5 s
+03 1890 hollerith     https://commons.wikimedia.org/wiki/File:Uitwerken_van_de_volkstelling-516144.webm  PD — 4,5 s
+04 1943 colossus      https://archive.org/details/Flickr-3878977512  CC BY-SA 2.0, Loz Pycock — 4,5 s @8 fps
+05 1944 mark i        https://archive.org/details/ARC-39033  PD (NARA), zwolnione 0,9x — 4,4 s
+06 1946 eniac     https://www.youtube.com/watch?v=bGk9W65vXNA  film US Army 1946 = PD; upload „Computer History Archives Project” (remaster) — dwie programistki przy panelu ENIAC-a ustawiają przełączniki/kable — 4,5 s
+07 1949 paper tape https://giphy.com/gifs/l2QDMn3ozS3SWcheo  Giphy — LICENCJA NIEZNANA (ten sam GIF co w obecnym README); bezszwowa pętla 1,28 s (16 klatek, nie ma dłuższego ujęcia)
+08 1951 dekatron      https://commons.wikimedia.org/wiki/File:Harwell_Dekatron_Computer_in_action_at_The_National_Museum_Of_Computing.webm  CC BY-SA 4.0, Nealmcb — 4,5 s
+09 1957 ibm 704       https://commons.wikimedia.org/wiki/File:MIT_unveils_IBM_704_computer_at_ribbon_cutting_-_the_first_on_campus_computer_ever!.webm  CC BY 3.0, IBM Research — 4,2 s
+10 1958 perceptron    https://archive.org/details/perceptron_documentary_excerpt  LICENCJA NIEZNANA — 4,5 s
+11 1962 pdp-1         https://archive.org/details/vw_spacewar-long  CC BY 3.0 US, DigiBarn — 4,5 s
+12 1972 shakey        https://www.youtube.com/watch?v=GmU7SimFkpU  !! (Stanford University Libraries; film SRI 1972), przyspieszone 3x — 4,5 s
+13 1975 altair        https://archive.org/details/altair-8800-video-7.1-loading-4-k-basic-with-a-teletype  CC BY 4.0, Mike Douglas — 4,5 s
+14 1979 micro         https://commons.wikimedia.org/wiki/File:Tentoonstelling_mens_en_computer_Weeknummer,_79-13_-_Open_Beelden_-_22208.ogv  CC BY-SA 3.0 NL — 2,8 s (ujęcie źródłowe krótkie, zwolnione 0,8x)
+15 1982 c64           https://commons.wikimedia.org/wiki/File:Commodore_64_Home_Computer_(1983).webm  CC BY-SA 4.0, Maximilian Schönherr — 4,5 s
+16 1989 lenet         https://www.youtube.com/watch?v=FwFduRA_L6Q  !! (kanał Yann LeCun) — 4,5 s
+17 1997 deep blue     https://www.youtube.com/watch?v=aNpv3LfCUa4  !! (6. partia 1997, Kasparow z głową w dłoniach) — 4,6 s
+18 2012 deep learning https://www.youtube.com/watch?v=YmbhRxQkLMg  !! (Joseph Redmon, „YOLO in New York”; detekcja na żywo: ramki person/handbag/car na przejściu) — 4,5 s
+19 2016 alphago       https://www.youtube.com/watch?v=l7ngy56GY6k  !! (SciNews / DeepMind), zwolnione 1,5x — 4,5 s
+20 2020 alphafold https://www.youtube.com/watch?v=Gk-PyJSNlcI  !! (Google DeepMind, „AlphaFold Protein Structure Database”; obracająca się struktura białka w kolorach pewności AlphaFold) — 4,5 s
+21 2022 llm       NOWE https://www.youtube.com/watch?v=AJpK3YTTKZ4  !! (kanał Anthropic, „Introducing Claude Code”, 2025-02; prawdziwe nagranie terminala: prompt „explain to me this project structure” → odpowiedź agenta strumieniowana z wywołaniami narzędzi Read/Task), przyspieszone 1,6x — 4,4 s
+22 2023 gen ai    NOWE porównanie obok siebie (zestawione przeze mnie, bez napisów): LEWO 2023 ModelScope „Will Smith eating spaghetti” z https://www.youtube.com/watch?v=vQ_iuPiHIWo (reupload, oryginał: Reddit u/chaindrop, marzec 2023; w tle słaby znak wodny reuploadera) | PRAWO 2025 Veo 3 z https://www.youtube.com/watch?v=ZbTJiFQnAYA (MrMagicmars, „Will Smith eating spaghetti in 2025 - Veo 3”)  !! wizerunek Willa Smitha + prawa autorskie / licencja nieznana — 5,0 s @8 fps
+23 2026 agents    NOWE https://www.youtube.com/watch?v=1QNsdr-Qx_I  !! (kanał OpenAI, „Introducing GPT-6 Astra”) — zakres wskazany przez Tomasza: 0:11 → pełny napis „ASTRA” (0:41,75) + ~1 s; 0:11–0:40 przyspieszone 7x (wewnątrz ~8 cięć montażowych oryginału), 0:40–0:42,75 w czasie rzeczywistym — 6,9 s, 10 fps, 603 KB
