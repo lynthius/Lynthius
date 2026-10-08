@@ -1,7 +1,8 @@
 
 
 **Tomasz** `/ˈtɔ.maʂ/`<br>
-AI Systems for Commerce. <img src="https://media.giphy.com/media/3ohjV0PbaTBNw42YO4/200w.gif" height="80" align="bottom" alt="vintage computer"><br>
+AI Systems for Commerce.<br>
+<img src="./marquee.svg" width="100%" alt="">
 
 Shopify apps, backend systems, retrieval and agents in production. Building tools around e-commerce search and catalog data.<br>
 Interested? Ping. Connect. Deploy.<br>
