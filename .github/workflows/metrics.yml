@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           filename: metrics.languages.svg
           output_action: commit
-          base: ""
+          base: repositories
           commits_authoring: lynthius, Tomasz Przyborowski
           repositories_affiliations: owner, collaborator, organization_member
           plugin_languages: yes
